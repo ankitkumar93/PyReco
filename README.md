@@ -1,11 +1,4 @@
-#README for Offline StackOverflow Recommendation System
-Main Objectives:
-	Data Collection
-	Data Analysis
-	Plugin Development
-	Project Integration
+#Creation of DB from XML Data Dumb of StackOverflow
 
-Current Work:
-	Data Collection: Have Data -> Conversion to DB being Done!
-
-
+Create a SQL DB. Filter on Python Tags.
+Look For -> Resultant DB Size. More Filtering needed?
