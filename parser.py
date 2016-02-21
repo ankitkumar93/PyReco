@@ -7,6 +7,7 @@ file_number = 0
 filename = "dump_"
 directory = './Dump/'
 extension = ".xml"
+file_limit = 100000
 file_limit = 10000
 print_bound = 1000
 root = XParser.Element("posts")
@@ -38,4 +39,12 @@ for event, elem in XParser.iterparse('../Data/Posts.xml'):
 	if tags != None:
 		if '<python>' in tags:
 			processElem(elem.attrib)
+	elem.clear()
+
+#at the end appent the remaining data to a file
+tree = XParser.ElementTree(root)
+path = os.path.join(directory,filename+str(file_number)+extension)
+tree.write(path)
+print "file: #" + str(file_number) + " done!"
+print "last file has records : #" + str(counter)
 	elem.clear()
