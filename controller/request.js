@@ -13,7 +13,9 @@ var requestManager = {
 		var query = req.query.tag;
 		var tags = query.split(';');
 		res.render('display');
-		//var ids = recommender.getRecommendation(tags);
+		var ids = [1,2,3,4,5];
+		var result = question.getQuestions(ids);
+		console.log(result);
 	}
 };
 module.exports = requestManager;
