@@ -8,23 +8,32 @@ import xml.etree.ElementTree as XParser
 #globals
 #dump files
 directory='./Dump/'
-filename = "dump_0.xml"
+filebase = "dump_" 
+extension =".xml"
+filenumber = 0
+filecount = 52
+
 #db
-dbname = sopython
-collname = dataset
+dbname = 'pyreco'
+collname = 'questions'
 
 #db init
 client = MongoClient()
 db = client[dbname]
 coll = db[collname]
 
+#keywords filter
+keylist = ['LastEditDate', 'LastEditorUserId', 'LastActivityDate', 'OwnerUserId', 'CreationDate']
+anskey = 'AnswerCount'
+
 #db insert function
 def inserttodb(attrib):
 	doc = {}
-	for key in attrib:
-		doc[key] = attrib[key]
-	result = coll.insert_one(doc)
-	print "record insert with id: #" + str(result)
+	if anskey in attrib and int(attrib[anskey]) > 0:
+		for key in attrib:
+			if key not in keylist:
+				doc[key] = attrib[key]
+		result = coll.insert_one(doc)
 
 
 #xml processor
@@ -33,5 +42,10 @@ def processxml(file):
 		inserttodb(elem.attrib)
 
 #main
-filepath = os.path.join(directory, filename)
-processxml(filepath)
+while filenumber < filecount:
+	filename = filebase + str(filenumber) + extension
+	filepath = os.path.join(directory, filename)
+	processxml(filepath)
+	print "file number: #" + str(filenumber) + " done!"
+	filenumber += 1
+print "db insertion done!"
