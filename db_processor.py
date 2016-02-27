@@ -4,14 +4,16 @@
 import os
 from pymongo import MongoClient
 import xml.etree.ElementTree as XParser
+from bs4 import BeautifulSoup
+import time
 
 #globals
 #dump files
 directory='./Dump/'
 filebase = "dump_" 
 extension =".xml"
-filenumber = 0
-filecount = 52
+filenumber = 1
+filecount = 2
 
 #db
 dbname = 'pyreco'
@@ -25,6 +27,13 @@ coll = db[collname]
 #keywords filter
 keylist = ['LastEditDate', 'LastEditorUserId', 'LastActivityDate', 'OwnerUserId', 'CreationDate']
 anskey = 'AnswerCount'
+bodykey = 'Body'
+
+#filter the body to make it only text
+def filtertext(text):
+	soup = BeautifulSoup(text, "html.parser")
+	parsed_text = soup.getText()
+	return parsed_text
 
 #db insert function
 def inserttodb(attrib):
@@ -32,7 +41,10 @@ def inserttodb(attrib):
 	if anskey in attrib and int(attrib[anskey]) > 0:
 		for key in attrib:
 			if key not in keylist:
-				doc[key] = attrib[key]
+				if key == bodykey:
+					doc[key] = filtertext(attrib[key])
+				else:
+					doc[key] = attrib[key]
 		result = coll.insert_one(doc)
 
 
