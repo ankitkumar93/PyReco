@@ -16,8 +16,10 @@ import sys
 MONGO_CONNECTION_STRING = "mongodb://localhost:27017/"
 POSTS_DATABASE = "sol1db"
 POSTS_COLLECTION = "posts"
+KEYWORDS_COLLECTION = "keywords"
 
 questions_collection = MongoClient(MONGO_CONNECTION_STRING)[POSTS_DATABASE][POSTS_COLLECTION]
+keywords_collection = MongoClient(MONGO_CONNECTION_STRING)[POSTS_DATABASE][KEYWORDS_COLLECTION]
 question_cursor = questions_collection.find()
 questionCount = question_cursor.count()
 question_cursor.batch_size(50000)
@@ -35,22 +37,28 @@ from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer("english")
 
 def main():
-	Id = []
 	for question in question_cursor:
-		Id.append(question["Id"])
-		Create_BagOfWords(question["Body"] + question["Title"] + question["Tags"])
+		Create_BagOfWords(question)
 
 			
 	
-def Create_BagOfWords(text):
+def Create_BagOfWords(question):
+	text = question["Body"] + question["Title"] + question["Tags"]
 	text = re.sub(r'python|Python|[^A-Za-z0-9. ]+',' ',text)
 	tokens = nltk.word_tokenize(text)
 	tokens = set(tokens)
 	tagged = nltk.pos_tag(tokens)
 	tagged = [word for (word,tag) in tagged if tag not in ["PRP","RB","JJ", "JJS"] and word.lower() not in updatedstopwords]
 	text = ' '.join([word for word in tagged])
+	question["Body"] = text;
+	insert_BagofWords(question)
 
 
+def insert_BagofWords(question):
+	keywords_collection.insert_one({
+        "id": question["Id"],
+        "tags": question["Body"]        
+    })
 
 if __name__ == "__main__":
     main()
