@@ -35,7 +35,7 @@ def main():
 
 def find_text(text):
 	ids = []
-	cursor = keywords_collection.find({"tags": "faster"})
+	cursor = keywords_collection.find()
 	for doc in cursor:
 		ids.append(doc["id"])
 	return ids
