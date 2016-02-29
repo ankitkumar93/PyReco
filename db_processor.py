@@ -12,22 +12,27 @@ import time
 directory='./Dump/'
 filebase = "dump_" 
 extension =".xml"
-filenumber = 1
-filecount = 2
+filenumber = 0
+filecount = 1
 
 #db
 dbname = 'pyreco'
-collname = 'questions'
+collnameq = 'questions'
+collnamea = 'answers'
 
 #db init
 client = MongoClient()
 db = client[dbname]
-coll = db[collname]
+collq = db[collnameq]
+colla = db[collnamea]
 
 #keywords filter
 keylist = ['LastEditDate', 'LastEditorUserId', 'LastActivityDate', 'OwnerUserId', 'CreationDate']
 anskey = 'AnswerCount'
 bodykey = 'Body'
+
+#answer vallist
+answervals = []
 
 #filter the body to make it only text
 def filtertext(text):
@@ -35,29 +40,58 @@ def filtertext(text):
 	parsed_text = soup.getText()
 	return parsed_text
 
-#db insert function
-def inserttodb(attrib):
+#db insert function for questions
+def inserttodbq(attrib):
 	doc = {}
 	if anskey in attrib and int(attrib[anskey]) > 0:
+		answervals.append(attrib[anskey])
 		for key in attrib:
 			if key not in keylist:
 				if key == bodykey:
 					doc[key] = filtertext(attrib[key])
 				else:
 					doc[key] = attrib[key]
-		result = coll.insert_one(doc)
+		result = collq.insert_one(doc)
+
+#db insert function for answers
+def inserttodba(attrib):
+	doc = {}
+	if anskey in attrib and int(attrib[anskey]) in answervals:
+		for key in attrib:
+			if key not in keylist:
+				if key == bodykey:
+					doc[key] = filtertext(attrib[key])
+				else:
+					doc[key] = attrib[key]
+		result = colla.insert_one(doc)
 
 
-#xml processor
-def processxml(file):
+#xml processor for questions
+def processxmlq(file):
 	for event, elem in XParser.iterparse(file):
-		inserttodb(elem.attrib)
+		inserttodbq(elem.attrib)
+
+#xml processor for answers
+def processxmla(file):
+	for event, elem in XParser.iterparse(file):
+		inserttodba(elem.attrib)
 
 #main
+#insert questions into db
 while filenumber < filecount:
 	filename = filebase + str(filenumber) + extension
 	filepath = os.path.join(directory, filename)
-	processxml(filepath)
+	processxmlq(filepath)
 	print "file number: #" + str(filenumber) + " done!"
 	filenumber += 1
-print "db insertion done!"
+print "db questions insertion done!"
+
+#insert answers into db
+filenumber = 0
+while filenumber < filecount:
+	filename = filebase + str(filenumber) + extension
+	filepath = os.path.join(directory, filename)
+	processxmla(filepath)
+	print "file number: #" + str(filenumber) + " done!"
+	filenumber += 1
+print "db answers insertion done!"
