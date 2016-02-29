@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div class="container-fluid">
+<div ng-app="" ng-init= "Title='TITLE'; Q1 = 'Question'; A1 = 'Answer'; Author = 'Author'; Upvotes='Upvotes'; ViewCount='View Count'; " >
+ 	
+     <div class="jumbotron">
+    <h1> <span ng-bind="Title"></span> </h1>
+    </div>
+
+    <div class="jumbotron"> 
+ 	<p class="bg-primary"> QUESTION1: <span ng-bind="Q1"></span></p>
+
+ 	<p class="bg-success" > ANSWER1: <span ng-bind="A1"></span></p>
+    </div>
+ 	
+    <div class="panel panel-default"> 
+ 	<p> AUTHOR: <span ng-bind="Author"></span></p>  
+ 	<p> UPVOTES: <span ng-bind="Upvotes"></span>    
+ 	<p> VIEW COUNT: <span ng-bind="ViewCount"></span> </p>
+    </div>
+
+</div>
+
+
+ </div>
+
+ 
+
+</body>
+</html>
