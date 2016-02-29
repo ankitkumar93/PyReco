@@ -13,7 +13,7 @@ directory='./Dump/'
 filebase = "dump_" 
 extension =".xml"
 filenumber = 0
-filecount = 1
+filecount = 52
 
 #db
 dbname = 'pyreco'
@@ -30,6 +30,8 @@ colla = db[collnamea]
 keylist = ['LastEditDate', 'LastEditorUserId', 'LastActivityDate', 'OwnerUserId', 'CreationDate']
 anskey = 'AnswerCount'
 bodykey = 'Body'
+accanskey = 'AcceptedAnswerId'
+idkey = 'Id'
 
 #answer vallist
 answervals = []
@@ -42,9 +44,10 @@ def filtertext(text):
 
 #db insert function for questions
 def inserttodbq(attrib):
+	global answervals
 	doc = {}
-	if anskey in attrib and int(attrib[anskey]) > 0:
-		answervals.append(attrib[anskey])
+	if anskey in attrib and int(attrib[anskey]) > 0  and accanskey in attrib:
+		answervals.append(attrib[accanskey])
 		for key in attrib:
 			if key not in keylist:
 				if key == bodykey:
@@ -56,7 +59,8 @@ def inserttodbq(attrib):
 #db insert function for answers
 def inserttodba(attrib):
 	doc = {}
-	if anskey in attrib and int(attrib[anskey]) in answervals:
+	if idkey in attrib and int(attrib[idkey]) == answervals[0]:
+		answervals.pop(0)
 		for key in attrib:
 			if key not in keylist:
 				if key == bodykey:
