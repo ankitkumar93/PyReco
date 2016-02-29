@@ -35,6 +35,8 @@ print(len(updatedstopwords))
 # load nltk's SnowballStemmer as variabled 'stemmer'
 from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer("english")
+done = 0
+start = time.time()
 
 def main():
 	for question in question_cursor:
@@ -52,6 +54,11 @@ def Create_BagOfWords(question):
 	text = ' '.join([word for word in tagged])
 	question["Body"] = text;
 	insert_BagofWords(question)
+	done += 1
+	if done % 100 == 0:
+		end = time.time()
+		os.system('cls')
+		print 'Done ' + str(done) + ' out of ' + str(reviewsCount) + ' in ' + str((end - start))
 
 
 def insert_BagofWords(question):
