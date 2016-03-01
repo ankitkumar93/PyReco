@@ -22,13 +22,11 @@ app.use(bodyParser.urlencoded({
 app.listen(8080, function(){
 	console.log("Server listening now!");
 });
-
-//Get Requests
-app.get('/req', function(req,res){
+//Post Requests
+app.post('/req', function(req,res){
 	controller.handleRequest(req, res);
 });
 
-//Post Requests
 app.post('/recom', function(req, res){
 	recommender.handleRecomm(req, res);
 });

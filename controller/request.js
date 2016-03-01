@@ -49,7 +49,7 @@ function getRecommendation(tags, res){
 //Class
 var requestManager = {
 	handleRequest: function(req, res){
-		var query = req.query.tag;
+		var query = req.body.tag;
 		var tags = query.split(';');
 		connecttodb();
 		getRecommendation(tags, res);

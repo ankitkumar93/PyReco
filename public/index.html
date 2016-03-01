@@ -1,5 +1,49 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> PyReco </title>
-	</head>
+<!-- Custom JS -->
+<script>
+function fetchData(){
+    //Grab Query String
+    var queryString = window.location.search.split('?tag=')[1];
+    var jsonToPass = JSON.stringify({"tag":queryString});
+    //Send Get Request
+    var getReq = new XMLHttpRequest();
+    getReq.open("POST", "http://127.0.0.1:8080/req", true);
+    getReq.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    getReq.send(jsonToPass);
+
+    //Grab Response from Server
+    getReq.onreadystatechange = function(){
+        if(getReq.readyState == 4 && getReq.status == 200){
+            var dataDiv = document.getElementById("data");
+            var reponseJSON = JSON.parse(getReq.responseText);
+            var responseArray = reponseJSON.ques;
+            for(index in responseArray){
+                var r_div = document.createElement('div');
+                r_div.id = "responseDiv";
+                r_div.innerHTML = '<br>';
+                var c_response = responseArray[index];
+                var t_div = document.createElement('div');
+                t_div.className = "title";
+                t_div.innerHTML = "Title: " + c_response.Title;
+                r_div.appendChild(t_div);
+                var b_div = document.createElement('div');
+                b_div.innerHTML = "Body:" + '<br>' + c_response.Body;
+                b_div.className = "title";
+                r_div.appendChild(b_div);
+                dataDiv.appendChild(r_div);
+            }
+        }
+    }
+
+}
+window.onload = fetchData;
+</script>
+<!-- Custom JS Ends -->
+    <body>
+    <h1> Welcome to PyReco! We make Python Easy! <h1>
+    <h3>Your Search Results Are:</h3>
+        <div id="data">
+        </div>
+    </body>
 </html>
