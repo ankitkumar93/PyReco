@@ -1,3 +1,0 @@
-mongoexport --db sol1db --collection keywords --out sol1keywords.json --journal
-
-mongoimport --db <db_name> --collection <collection_name> --file <json_file_name>
