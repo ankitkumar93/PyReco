@@ -4,7 +4,7 @@ import webbrowser
 class PyrecoCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		sel = self.view.sel()
-		url = "http://127.0.0.1/?tag="
+		url = "http://127.0.0.1:8080/?tag="
 		for region in sel:
 			sel_text = self.view.substr(region)
 			url += sel_text + ";"
