@@ -1,13 +1,5 @@
 //Require
-var mongoose = require("mongoose");
 var recomModel = require('../model/recomModel.js');
-//Db
-var db = 'pyreco';
-
-//Helper Functions
-function connecttodb(){
-	mongoose.connect('mongodb://localhost/'+db);
-}
 
 function formQueryString(taglist){
 	var queryString = '';
@@ -19,7 +11,6 @@ function formQueryString(taglist){
 }
 
 function findAll(taglist, res){
-	connecttodb();
 	var queryString = formQueryString(taglist);
 	recomModel.find({$text:{$search:queryString}}, function(err, data){
 		var ids = new Array();

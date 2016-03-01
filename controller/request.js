@@ -1,11 +1,24 @@
 //Require
 var request = require('request');
+var mongoose = require("mongoose");
 
 //View
 var display = require("../views/display.ejs");
 
+//Db
+var db = 'pyreco';
+
 //Helper Functions
-function getQuestions(ids){
+function connecttodb(){
+	mongoose.connect('mongodb://localhost/'+db);
+}
+
+function closeconnectiontodb(){
+	mongoose.connection.close();
+}
+
+//Helper Functions
+function getQuestions(ids, res){
 	request.post(
 		'http://127.0.0.1:8080/ques',
 		{form: {ids: ids}},
@@ -15,19 +28,22 @@ function getQuestions(ids){
 			}else{
 				res.send("questions: " + err);
 			}
+			closeconnectiontodb();
 		}
 	);
 }
 
-function getRecommendation(tags){
+function getRecommendation(tags, res){
 	request.post(
 		'http://127.0.0.1:8080/recom',
 		{form: {tags: tags}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				getQuestions(body.ids);
+				var bodyJSON = JSON.parse(body);
+				getQuestions(bodyJSON.ids, res);
 			}else{
 				res.send("recommendor: " + err);
+				closeconnectiontodb();
 			}
 		}
 	);
@@ -38,7 +54,8 @@ var requestManager = {
 	handleRequest: function(req, res){
 		var query = req.query.tag;
 		var tags = query.split(';');
-		getRecommendation(tags);
+		connecttodb();
+		getRecommendation(tags, res);
 	}
 };
 module.exports = requestManager;
