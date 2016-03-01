@@ -2,9 +2,6 @@
 var request = require('request');
 var mongoose = require("mongoose");
 
-//View
-var display = require("../views/display.ejs");
-
 //Db
 var db = 'pyreco';
 

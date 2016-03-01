@@ -1,7 +1,7 @@
 //Import
 var express = require('express');
-var ejs = require('ejs');
 var bodyParser = require('body-parser');
+var path = require('path');
 
 //Controllers
 var controller = require("./controller/request.js");
@@ -11,7 +11,9 @@ var answer = require('./controller/answer.js');
 
 //Init
 var app = express();
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true
@@ -22,7 +24,7 @@ app.listen(8080, function(){
 });
 
 //Get Requests
-app.get('/', function(req,res){
+app.get('/req', function(req,res){
 	controller.handleRequest(req, res);
 });
 
