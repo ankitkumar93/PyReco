@@ -30,3 +30,7 @@ app.get('/', function(req,res){
 app.post('/recom', function(req, res){
 	recommender.handleRecomm(req, res);
 });
+
+app.post('/ques', function(req, res){
+	question.handleQuestions(req, res);
+});

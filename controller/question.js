@@ -1,17 +1,27 @@
 //Require
 var mongoose = require("mongoose");
+var quesModel = require('../model/quesModel.js');
+//Db
+var db = 'pyreco';
 
-function getQuestion(id){
-		return "hi";
+//Helper Functions
+function connecttodb(){
+	mongoose.connect('mongodb://localhost/'+db);
+}
+
+function findQuestions(idlist, res){
+		connecttodb();
+		quesModel.find({"Id": idlist}, function(err, data){
+			var object = new Object();
+			object['ques'] = data;
+			res.send(object);
+		});
 }
 
 var question = {
-	getQuestions: function(ids){
-		var object = new Object();
-		for(id in ids){
-			object[id] = getQuestion(id);
-		}
-		return object;
+	handleQuestions: function(req, res){
+		var ids = req.body.ids;
+		findQuestions(ids, res);
 	}
 };
 module.exports = question;
