@@ -1,8 +1,5 @@
 //Require
-//Model
-var recommender = require('../model/recommender.js');
-var question = require('../model/question.js');
-var answer = require('../model/answer.js');
+var request = require('request');
 
 //View
 var display = require("../views/display.ejs");
@@ -12,10 +9,15 @@ var requestManager = {
 	handleRequest: function(req, res){
 		var query = req.query.tag;
 		var tags = query.split(';');
-		res.render('display');
-		var ids = [1,2,3,4,5];
-		var result = question.getQuestions(ids);
-		console.log(result);
-	}
+		request.post(
+			'http://127.0.0.1:8080/recom',
+			{form: {tags: tags}},
+			function (err, response, body){
+				if(!err && response.statusCode == 200){
+					res.send(body);
+				}
+			}
+		);
+	},
 };
 module.exports = requestManager;

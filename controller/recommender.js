@@ -9,15 +9,33 @@ function connecttodb(){
 	mongoose.connect('mongodb://localhost/'+db);
 }
 
-function findAll(taglist){
-	recomModel.findAll({tags: taglist}, function(err, ids){
-		return ids;
+function formQueryString(taglist){
+	var queryString = '';
+	for(index in taglist){
+		if(index < taglist.length - 1)
+			queryString +='"' + taglist[index] + '" ';
+	}
+	return queryString;
+}
+
+function findAll(taglist, res){
+	connecttodb();
+	var queryString = formQueryString(taglist);
+	recomModel.find({$text:{$search:queryString}}, function(err, data){
+		var ids = new Array();
+		for(index in data){
+			ids.push(data[index].id);
+		}
+		var object = new Object();
+		object["ids"] = ids;
+		res.send(object);
 	});
 }
 
-var question = {
-	getRecommIDs: function(taglist){
-		var ids = findAll(taglist);
+var recommender = {
+	handleRecomm: function(req, res){
+		var taglist = req.body.tags;
+		findAll(taglist, res);
 	}
 };
 module.exports = recommender;
