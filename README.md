@@ -4,7 +4,7 @@
 * [Milestones](https://github.com/ankitkumar93/csc510-se-project/milestones)  
 * [Contributers](https://github.com/ankitkumar93/csc510-se-project/graphs/contributors)  
 * [Evaluation Plan](https://github.com/ankitkumar93/csc510-se-project/blob/master/Evaluation.md)  
-* [Telemetry]  
+* [Telemetry](https://github.com/ankitkumar93/csc510-se-project/blob/master/Telemetry.md)  
   
 **Code Base:**  
 * [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/solution1)  
