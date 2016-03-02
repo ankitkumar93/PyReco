@@ -8,5 +8,5 @@ The telemetry surveys would be of _two_ sections:
 We would include a link of these surveys with our application and the links would also be displayed in our application asking the users to complete the survey for us. Further, we would be pushing out a README into our git repo comprising of the surveys and the link for downloading our application. We are aiming to achieve an efficient data collection through this process.  
   
 Here is the telemetry sample:  
-[Sample Survey](http://goo.gl/forms/83fOIKBaSu)
+[Sample Survey](http://goo.gl/forms/83fOIKBaSu)  
 [Sample Survey Responses](https://goo.gl/JHREJQ)
