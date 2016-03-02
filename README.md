@@ -1,11 +1,13 @@
-#README for Offline StackOverflow Recommendation System
+#README for PyReco _(Offline StackOverflow Recommendation System)_  
 **Links:**  
 * [Issues](https://github.com/ankitkumar93/csc510-se-project/issues)  
 * [Milestones](https://github.com/ankitkumar93/csc510-se-project/milestones)  
 * [Contributers](https://github.com/ankitkumar93/csc510-se-project/graphs/contributors)  
-**Telemetry:**  
-###Code Base:  
-_Recommendation Model:_  
+  
+**Evaluation Plan:**  
+*[Evaluation Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Evaluation.md)  
+  
+**Code Base:**  
 * [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/solution1)  
 * [Solution #2](https://github.com/ankitkumar93/csc510-se-project/tree/solution2)  
 * [Solution #3](https://github.com/ankitkumar93/csc510-se-project/tree/solution3)  
