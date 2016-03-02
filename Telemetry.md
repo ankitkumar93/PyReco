@@ -9,4 +9,4 @@ We would include a link of these surveys with our application and the links woul
   
 Here is the telemetry sample:  
 [Sample Survey](http://goo.gl/forms/83fOIKBaSu)  
-[Sample Survey Responses](https://goo.gl/JHREJQ)
+[Sample Survey Responses](https://goo.gl/vxa7im)
