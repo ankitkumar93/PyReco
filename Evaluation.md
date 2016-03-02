@@ -1,8 +1,8 @@
-Telemetry Plan  
+Evaluation Plan  
   
-The telemetry description is divided into the following 3 subsections:  
+The plan description is divided into the following 3 subsections:  
 1) Experimental Setup:  
-As our solution comprises of a recommendation system, we would be sitting down with as many users as we can (about 20) and make them use our application. Our aim would be to assess how accurate our solution is on the basis of the parameters defined below and also how impressed the users are with it. We would be asking the users for their feedback on how good the application is as compared to a simple search on stackoverflow. We have certain parameters to obtain the user’s feedback on, which would help us assess the quality of our solutions.  
+As our solution comprises of a recommendation system, trying to involve as many users as we can (about 20 atleast) and make them use our application. Our aim would be to assess how accurate our solution is on the basis of the parameters defined below and also how impressed the users are with it. We would be asking the users for their feedback on how good the application is as compared to a simple search on stackoverflow. We have certain parameters to obtain the user’s feedback on, which would help us assess the quality of our solutions.  
 2) Assessment Parameters:  
 There two groups of parameters for assessment:  
 ii) Technical Parameters: These are the parameters that would help us evaluate how well the 3 solutions perform against each other and against a simple search on stackoverflow. The various parameters are:  
