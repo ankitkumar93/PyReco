@@ -3,9 +3,8 @@
 * [Issues](https://github.com/ankitkumar93/csc510-se-project/issues)  
 * [Milestones](https://github.com/ankitkumar93/csc510-se-project/milestones)  
 * [Contributers](https://github.com/ankitkumar93/csc510-se-project/graphs/contributors)  
-  
-**Evaluation Plan:**  
-*[Evaluation Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Evaluation.md)  
+* [Evaluation Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Evaluation.md)  
+* [Telemetry]  
   
 **Code Base:**  
 * [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/solution1)  
