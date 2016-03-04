@@ -114,27 +114,33 @@ def main():
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
 	print(order_centroids[0,:])
 	#ocab_frame = vocab_frame.fillna('',inplace=True)
+	done = 0
 	for i in range(num_clusters):
 		tags = []
 		ids = []
-		print("Cluster %d words: " % i, end='')
+		#print("Cluster %d words: " % i, end='')
 		for ind in order_centroids[i, :]: #replace 6 with n words per cluster
 			word = vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0]
 			#print(word)
 			tags.extend([word])
 			
-		print() #add whitespace
-		print() #add whitespace
+		#print() #add whitespace
+		#print() #add whitespace
 
-		print("Cluster %d ids:" % i, end='')
+		#print("Cluster %d ids:" % i, end='')
 		for id in frame.ix[i]['Id'].values.tolist():
 			ids.extend([id])
 			#print(' %s,' % id, end='  ')			
 
 		insert_keywords(tags, ids)
+		done += 1
+		if(done % 100 == 0):
+			#end = time.time()
+			os.system('clear')
+			print('Done')
 
-		print() #add whitespace
-		print() #add whitespace
+		#print() #add whitespace
+		#print() #add whitespace
 
 def text_preprocess(words):
 	tokens = [word for word in words.split() if word not in my_stopwords]
@@ -168,8 +174,12 @@ def tokenize_only(text):
     return filtered_tokens
 
 def insert_keywords(tags, ids):
+	print("hi")
 	for id in ids:
-		print(id)
+		keywords_collection.insert_one({
+			"tag" : tags,
+			"id" : id
+		})
 
 if __name__ == "__main__":
     main()
