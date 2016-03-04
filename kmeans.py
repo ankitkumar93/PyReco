@@ -62,9 +62,6 @@ def main():
 		totalvocab_tokenized.extend(allwords_tokenized)
 
 	vocab_frame = pd.DataFrame({'words': totalvocab_tokenized}, index = totalvocab_stemmed)
-	#print('there are ' + str(vocab_frame.shape[0]) + ' items in vocab_frame')
-	#print(vocab_frame.head())
-	#print()
 
 	from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -76,11 +73,12 @@ def main():
 	tfidf_matrix = tfidf_vectorizer.fit_transform(synopses) #fit the vectorizer to synopses
 
 	terms = tfidf_vectorizer.get_feature_names()
+<<<<<<< HEAD
 
+=======
+>>>>>>> a2aaf530b49d582b02fd5e8ff24c548b74f7acf5
 	from sklearn.metrics.pairwise import cosine_similarity
 	dist = 1 - cosine_similarity(tfidf_matrix)
-	print
-	print
 	
 	from sklearn.cluster import KMeans
 	num_clusters = 100
@@ -88,26 +86,16 @@ def main():
 	km.fit(tfidf_matrix)
 	clusters = km.labels_.tolist()
 
-	#from sklearn.externals import joblib
-
-	#uncomment the below to save your model 
-	#since I've already run my model I am loading from the pickle
-	# joblib.dump(km,  'doc_cluster.pkl')
-	# km = joblib.load('doc_cluster.pkl')
-	#clusters = km.labels_.tolist()
-
-
-	#posts = {'Title': title, "Id": Id, 'synopsis': synopses, 'cluster': clusters}
 	posts = {"Id": Id, 'synopsis': synopses, 'cluster': clusters}
-	#frame = pd.DataFrame(posts, index = [clusters] , columns = ['Title', 'Id', 'cluster'])
 	frame = pd.DataFrame(posts, index = [clusters] , columns = ['Id', 'cluster'])
-	#print(frame['cluster'].value_counts()) #number of films per cluster (clusters from 0 to 4)
-			
-	#print("Top terms per cluster:")
-	#print()
 	#sort cluster centers by proximity to centroid
+<<<<<<< HEAD
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 	#ocab_frame = vocab_frame.fillna('',inplace=True)
+=======
+	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
+	print(order_centroids[0,:])
+>>>>>>> a2aaf530b49d582b02fd5e8ff24c548b74f7acf5
 	done = 0
 	for i in range(num_clusters):
 		tags = []
@@ -115,27 +103,19 @@ def main():
 		#print("Cluster %d words: " % i, end='')
 		for ind in order_centroids[i, :]: #replace 6 with n words per cluster
 			word = vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0]
-			#print(word)
 			tags.extend([word])
 			
-		#print() #add whitespace
-		#print() #add whitespace
-
 		#print("Cluster %d ids:" % i, end='')
 		for id in frame.ix[i]['Id'].values.tolist():
 			ids.extend([id])
-			#print(' %s,' % id, end='  ')			
-
+	
 		insert_keywords(tags, ids)
 		done += 1
 		if(done % 100 == 0):
-			#end = time.time()
 			os.system('clear')
 			print('Done')
 
-		#print() #add whitespace
-		#print() #add whitespace
-
+	
 def text_preprocess(words):
 	tokens = [word for word in words.split() if word not in my_stopwords]
 	text = ' '.join([word for word in tokens])
