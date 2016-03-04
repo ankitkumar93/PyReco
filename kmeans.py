@@ -144,10 +144,11 @@ def main():
 
 def text_preprocess(words):
 	tokens = [word for word in words.split() if word not in my_stopwords]
-	tokens = nltk.word_tokenize(words)
+	text = ' '.join([word for word in tokens])
+	tokens = nltk.word_tokenize(text)
 	tokens = set(tokens)
 	tagged = tagger.tag(tokens)
-	tagged = [word for (word,tag) in tagged if tag in ["NN"]]
+	tagged = [word for (word,tag) in tagged if tag not in ["PRP", "RB", "JJS", "JJ", "JJR"]]
 	text = ' '.join([word for word in tagged])
 	return text
 
@@ -174,10 +175,10 @@ def tokenize_only(text):
     return filtered_tokens
 
 def insert_keywords(tags, ids):
-	print("hi")
+	text = ' '.join(str(tag) for tag in tags)
 	for id in ids:
 		keywords_collection.insert_one({
-			"tag" : tags,
+			"tag" : text,
 			"id" : id
 		})
 
