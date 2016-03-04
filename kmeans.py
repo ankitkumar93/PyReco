@@ -70,17 +70,12 @@ def main():
 
 	#define vectorizer parameters
 	tfidf_vectorizer = TfidfVectorizer(max_df=0.8,
-		min_df=0.2, stop_words='english',
-		use_idf=True, tokenizer=tokenize_and_stem, ngram_range=(1,4))
+		min_df=0.02, stop_words='english',
+		use_idf=True, tokenizer=tokenize_and_stem)
 	
 	tfidf_matrix = tfidf_vectorizer.fit_transform(synopses) #fit the vectorizer to synopses
-	#print(tfidf_matrix)
-	
-	
 
 	terms = tfidf_vectorizer.get_feature_names()
-	#print(terms)
-	#sys.exit(0)
 
 	from sklearn.metrics.pairwise import cosine_similarity
 	dist = 1 - cosine_similarity(tfidf_matrix)
@@ -111,8 +106,7 @@ def main():
 	#print("Top terms per cluster:")
 	#print()
 	#sort cluster centers by proximity to centroid
-	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
-	print(order_centroids[0,:])
+	order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 	#ocab_frame = vocab_frame.fillna('',inplace=True)
 	done = 0
 	for i in range(num_clusters):
