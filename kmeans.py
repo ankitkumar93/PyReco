@@ -18,8 +18,10 @@ MONGO_CONNECTION_STRING = "mongodb://localhost:27017/"
 REVIEWS_DATABASE = "sopyro"
 TAGS_DATABASE = ""
 REVIEWS_COLLECTION = "questions"
+SOL2_KEYWORDS_COLLECTION = "sol2keywords"
 
 questions_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][REVIEWS_COLLECTION]
+keywords_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][SOL2_KEYWORDS_COLLECTION]
 question_cursor = questions_collection.find()
 questionCount = question_cursor.count()
 question_cursor.batch_size(50000)
@@ -60,9 +62,9 @@ def main():
 		totalvocab_tokenized.extend(allwords_tokenized)
 
 	vocab_frame = pd.DataFrame({'words': totalvocab_tokenized}, index = totalvocab_stemmed)
-	print('there are ' + str(vocab_frame.shape[0]) + ' items in vocab_frame')
-	print(vocab_frame.head())
-	print()
+	#print('there are ' + str(vocab_frame.shape[0]) + ' items in vocab_frame')
+	#print(vocab_frame.head())
+	#print()
 
 	from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -104,26 +106,32 @@ def main():
 	posts = {"Id": Id, 'synopsis': synopses, 'cluster': clusters}
 	#frame = pd.DataFrame(posts, index = [clusters] , columns = ['Title', 'Id', 'cluster'])
 	frame = pd.DataFrame(posts, index = [clusters] , columns = ['Id', 'cluster'])
-	print(frame['cluster'].value_counts()) #number of films per cluster (clusters from 0 to 4)
+	#print(frame['cluster'].value_counts()) #number of films per cluster (clusters from 0 to 4)
 			
-	print("Top terms per cluster:")
-	print()
+	#print("Top terms per cluster:")
+	#print()
 	#sort cluster centers by proximity to centroid
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
-
+	print(order_centroids[0,:])
+	#ocab_frame = vocab_frame.fillna('',inplace=True)
 	for i in range(num_clusters):
+		tags = []
+		ids = []
 		print("Cluster %d words: " % i, end='')
-		
 		for ind in order_centroids[i, :]: #replace 6 with n words per cluster
-			print(vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0], end=',')
-			#print(' %s' % frame.ix[terms[ind].split(' ')].values.tolist()[0][0].encode('utf-8', 'ignore'), end=',')
-
+			word = vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0]
+			#print(word)
+			tags.extend([word])
+			
 		print() #add whitespace
 		print() #add whitespace
 
 		print("Cluster %d ids:" % i, end='')
 		for id in frame.ix[i]['Id'].values.tolist():
-			print(' %s,' % id, end='  ')
+			ids.extend([id])
+			#print(' %s,' % id, end='  ')			
+
+		insert_keywords(tags, ids)
 
 		print() #add whitespace
 		print() #add whitespace
@@ -158,6 +166,10 @@ def tokenize_only(text):
         if re.search('[a-zA-Z]', token):
             filtered_tokens.append(token)
     return filtered_tokens
+
+def insert_keywords(tags, ids):
+	for id in ids:
+		print(id)
 
 if __name__ == "__main__":
     main()
