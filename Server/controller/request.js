@@ -1,6 +1,7 @@
 //Require
 var request = require('request');
 var mongoose = require("mongoose");
+var filter = require('./filter.js');
 
 //Db
 var db = 'pyreco';
@@ -21,7 +22,8 @@ function getQuestions(ids, res){
 		{form: {ids: ids}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				res.send(body);
+				var filteredQuestions = filter.filterQuestions(body);
+				res.send(filteredQuestions);
 			}else{
 				res.send("questions: " + err);
 			}
