@@ -93,6 +93,12 @@ def main():
 	# km = joblib.load('doc_cluster.pkl')
 	#clusters = km.labels_.tolist()
 
+	#uncomment the below to save your model 
+	since I've already run my model I am loading from the pickle
+	joblib.dump(km,  'doc_cluster.pkl')
+	km = joblib.load('doc_cluster.pkl')
+	clusters = km.labels_.tolist()
+
 
 	#posts = {'Title': title, "Id": Id, 'synopsis': synopses, 'cluster': clusters}
 	posts = {"Id": Id, 'synopsis': synopses, 'cluster': clusters}
