@@ -2,6 +2,7 @@
 var request = require('request');
 var mongoose = require("mongoose");
 var filter = require('./filter.js');
+var hashfilter = require('./hashfilter.js');
 
 //Db
 var db = 'pyreco';
@@ -38,8 +39,8 @@ function getRecommendation(tags, res){
 		{form: {tags: tags}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				var bodyJSON = JSON.parse(body);
-				getQuestions(bodyJSON.ids, res);
+				var filteredIds = hashfilter.filter(body, tags);
+				getQuestions(filteredIds, res);
 			}else{
 				res.send("recommendor: " + err);
 				closeconnectiontodb();

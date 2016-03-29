@@ -1,3 +1,4 @@
+//Comparator for View Count
 function compareView(q1,q2){
 	var view1 = Number.parseInt(q1.viewCount);
 	var view2 = Number.parseInt(q2.viewCount);
@@ -9,6 +10,7 @@ function compareView(q1,q2){
 		return 0;
 }
 
+//Comparator for Score
 function compareScore(q1,q2){
 	var score1 = Number.parseInt(q1.Score);
 	var score2 = Number.parseInt(q2.Score);
@@ -32,7 +34,7 @@ function sortView(questions){
 	return output;
 }
 
-//Filter Second:
+//Sort by Score and Return 10
 function sortScore(questions){
 	questions.sort(compareScore);
 	var output = new Array();
@@ -45,9 +47,7 @@ function sortScore(questions){
 var filter = {
 	filterQuestions: function(questions){
 		var filter_view = sortView(questions);
-		console.log(filter_view);
 		var filter_score = sortScore(filter_view);
-		console.log(filter_score);
 		var filtered_questions = new Object();
 		filtered_questions.ques = filter_score;
 		return filtered_questions;
