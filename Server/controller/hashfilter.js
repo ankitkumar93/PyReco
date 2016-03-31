@@ -4,7 +4,6 @@ var simhash = require('simhash')();
 function getHashVal(hasharr){
 	var hashval = 0;
 	var length = hasharr.length;
-	console.log(hasharr);
 	for(index in hasharr){
 		if(hasharr[length - index - 1] == 1)
 			hashval += Math.pow(2, index);
@@ -37,7 +36,10 @@ function sortIds(object){
 
 var hashfilter = {
 	filter: function(body, context){
-		var ids = JSON.parse(body).ids;
+		var bodyJSON = JSON.parse(body);
+		var ids = bodyJSON.ids;
+		var hash = bodyJSON.hash;
+		console.log(bodyJSON);
 		//var context_tags = context.split(' ');
 		var hashdata = simhash(context);
 		var hashval = getHashVal(hashdata);

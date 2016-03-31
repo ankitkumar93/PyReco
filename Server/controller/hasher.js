@@ -4,6 +4,7 @@ var hashModel = require('../model/hashModel.js');
 //Helper Functions
 function findHashes(idlist, res){
 		hashModel.find({"Id": {$in: idlist}}, function(err, data){
+			console.log(err);
 			var object = null;
 			if(typeof data != "undefined"){
 				object = new Object();
