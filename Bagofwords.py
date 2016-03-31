@@ -9,6 +9,7 @@ from sklearn import feature_extraction
 import mpld3
 from pymongo import MongoClient
 import sys
+import time
 
 
 
@@ -45,6 +46,7 @@ def main():
 			
 	
 def Create_BagOfWords(question):
+	global done
 	text = question["Body"] + question["Title"] + question["Tags"]
 	text = re.sub(r'python|Python|[^A-Za-z0-9. ]+',' ',text)
 	tokens = nltk.word_tokenize(text)
@@ -58,7 +60,7 @@ def Create_BagOfWords(question):
 	if done % 100 == 0:
 		end = time.time()
 		os.system('cls')
-		print ('Done ' + str(done) + ' out of ' + str(reviewsCount) + ' in ' + str((end - start)))
+		print ("Done: " + str(done))
 
 
 def insert_BagofWords(question):
