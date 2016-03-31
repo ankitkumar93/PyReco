@@ -14,19 +14,19 @@ import sys
 
 #DATASET_FILE = 'dataset/yelp_dataset_challenge_academic_dataset'
 MONGO_CONNECTION_STRING = "mongodb://localhost:27017/"
-POSTS_DATABASE = "sol1db"
-POSTS_COLLECTION = "posts"
-KEYWORDS_COLLECTION = "keywords"
+POSTS_DATABASE = "pyreco"
+POSTS_COLLECTION = "questions"
+KEYWORDS_COLLECTION = "sol1"
 
 questions_collection = MongoClient(MONGO_CONNECTION_STRING)[POSTS_DATABASE][POSTS_COLLECTION]
 keywords_collection = MongoClient(MONGO_CONNECTION_STRING)[POSTS_DATABASE][KEYWORDS_COLLECTION]
 question_cursor = questions_collection.find()
 questionCount = question_cursor.count()
-question_cursor.batch_size(50000)
+#question_cursor.batch_size(50000) #commented for now! small db!
 
 # load nltk's English stopwords as variable called 'stopwords'
 stopwords = nltk.corpus.stopwords.words('english')
-stopFile = open("/home/harshdeep/Documents/SE/stopwords.txt", "r")
+stopFile = open("./stopwords.txt", "r")
 stopW = stopFile.read()
 my_stopwords = stopW.split(", ")
 updatedstopwords = my_stopwords + stopwords + ['python']
@@ -58,7 +58,7 @@ def Create_BagOfWords(question):
 	if done % 100 == 0:
 		end = time.time()
 		os.system('cls')
-		print 'Done ' + str(done) + ' out of ' + str(reviewsCount) + ' in ' + str((end - start))
+		print ('Done ' + str(done) + ' out of ' + str(reviewsCount) + ' in ' + str((end - start)))
 
 
 def insert_BagofWords(question):
