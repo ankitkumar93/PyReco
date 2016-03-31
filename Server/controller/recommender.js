@@ -13,12 +13,15 @@ function formQueryString(taglist){
 function findAll(taglist, res){
 	var queryString = formQueryString(taglist);
 	recomModel.find({$text:{$search:queryString}}, function(err, data){
-		var ids = new Array();
-		for(index in data){
-			ids.push(data[index].id);
+		var object = null;
+		if(typeof data != "undefined"){
+			var ids = new Array();
+			for(index in data){
+				ids.push(data[index].id);
+			}
+			object = new Object();
+			object["ids"] = ids;
 		}
-		var object = new Object();
-		object["ids"] = ids;
 		res.send(object);
 	});
 }

@@ -8,6 +8,7 @@ var controller = require("./controller/request.js");
 var recommender = require('./controller/recommender.js');
 var question = require('./controller/question.js');
 var answer = require('./controller/answer.js');
+var hasher = require('./controller/hasher.js');
 
 //Init
 var app = express();
@@ -29,6 +30,10 @@ app.post('/req', function(req,res){
 
 app.post('/recom', function(req, res){
 	recommender.handleRecomm(req, res);
+});
+
+app.post('/gethash', function(req,res){
+	hasher.handleHashes(req, res);
 });
 
 app.post('/ques', function(req, res){

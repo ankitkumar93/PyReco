@@ -23,12 +23,36 @@ function getQuestions(ids, res){
 		{form: {ids: ids}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				var filteredQuestions = filter.filterQuestions(body);
-				res.send(filteredQuestions);
+				if(body == null){
+					res.send(null);
+				}else{
+					var filteredQuestions = filter.filterQuestions(body);
+					res.send(filteredQuestions);
+				}
 			}else{
 				res.send("questions: " + err);
 			}
 			closeconnectiontodb();
+		}
+	);
+}
+
+function getHash(ids, tags, res){
+	request.post(
+		'http://127.0.0.1:8080/gethash',
+		{form: {ids: ids}},
+		function (err, response, body){
+			if(!err && response.statusCode == 200){
+				if(body == null){
+					res.send(null);
+				}else{
+					var filteredIds = hashfilter.filter(body, tags);
+					getQuestions(filteredIds, res);
+				}
+			}else{
+				res.send("hash: " + err);
+				closeconnectiontodb();
+			}
 		}
 	);
 }
@@ -39,8 +63,12 @@ function getRecommendation(tags, res){
 		{form: {tags: tags}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				var filteredIds = hashfilter.filter(body, tags);
-				getQuestions(filteredIds, res);
+				if(body == null){
+					res.send(null);
+				}else{
+					var ids = JSON.parse(body).ids;
+					getHash(ids, tags, res);
+				}
 			}else{
 				res.send("recommendor: " + err);
 				closeconnectiontodb();

@@ -4,8 +4,11 @@ var quesModel = require('../model/quesModel.js');
 //Helper Functions
 function findQuestions(idlist, res){
 		quesModel.find({"Id": {$in: idlist}}, function(err, data){
-			var object = new Object();
-			object['ques'] = data;
+			var object = null;
+			if(typeof data != "undefined"){
+				object = new Object();
+				object['ques'] = data;
+			}
 			res.send(object);
 		});
 }
