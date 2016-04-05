@@ -4,14 +4,19 @@ var hashModel = require('../model/hashModel.js');
 //Helper Functions
 function findHashes(idlist, res){
 		hashModel.find({"Id": {$in: idlist}}, function(err, data){
-			console.log(err);
-			var object = null;
+			var arr = new Array();
 			if(typeof data != "undefined"){
-				object = new Object();
-				object['hash'] = data['Hash']
-				object['ids'] = data['Id']
+				for(index in data){
+					var object = new Object();
+					object['hash'] = data[index]['Hash'];
+					object['id'] = data[index]['Id'];
+
+					arr.push(object);
+				}
 			}
-			res.send(object);
+			var hasobject = new Object();
+			hasobject['hashes'] = arr;
+			res.send(hasobject);
 		});
 }
 

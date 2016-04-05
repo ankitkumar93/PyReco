@@ -23,10 +23,13 @@ function getQuestions(ids, res){
 		{form: {ids: ids}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				if(body == null){
-					res.send(null);
-				}else{
-					var filteredQuestions = filter.filterQuestions(body);
+				var ques = JSON.parse(body).ques;
+				if(ques.length == 0){
+					closeconnectiontodb();
+					res.send(ques);
+				}
+				else{
+					var filteredQuestions = filter.filterQuestions(ques);
 					res.send(filteredQuestions);
 				}
 			}else{
@@ -43,9 +46,12 @@ function getHash(ids, tags, res){
 		{form: {ids: ids}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				if(body == null){
-					res.send(null);
-				}else{
+				var hashes = JSON.parse(body).hashes;
+				if(hashes.length == 0){
+					closeconnectiontodb();
+					res.send(hashes);
+				}
+				else{
 					var filteredIds = hashfilter.filter(body, tags);
 					getQuestions(filteredIds, res);
 				}
@@ -63,12 +69,13 @@ function getRecommendation(tags, res){
 		{form: {tags: tags}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				if(body == null){
-					res.send(null);
-				}else{
-					var ids = JSON.parse(body).ids;
-					getHash(ids, tags, res);
+				var ids = JSON.parse(body).ids;
+				if(ids.length == 0){
+					closeconnectiontodb();
+					res.send(ids);
 				}
+				else
+					getHash(ids, tags, res);
 			}else{
 				res.send("recommendor: " + err);
 				closeconnectiontodb();
@@ -82,8 +89,14 @@ var requestManager = {
 	handleRequest: function(req, res){
 		var query = req.body.tag;
 		var tags = query.split(';');
+		var taglist = new Array();
+		for(index in tags){
+			var currtag = tags[index];
+			if(currtag != '')
+				taglist.push(currtag);
+		}
 		connecttodb();
-		getRecommendation(tags, res);
+		getRecommendation(taglist, res);
 	}
 };
 module.exports = requestManager;

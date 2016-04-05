@@ -4,8 +4,10 @@ var mongoose = require("mongoose");
 //Schema
 var Schema = mongoose.Schema;
 var hashSchema = new Schema({
-	Id: {type: Number, required: true, unique: true},
+	Id: {type: String, required: true, unique: true},
 	Hash: String
+}, {
+	collection: 'qhash'
 });
 
 //Model

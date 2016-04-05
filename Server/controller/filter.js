@@ -25,11 +25,11 @@ function compareScore(q1,q2){
 
 //Sort by Votes and Return 100
 function sortView(questions){
-	var body = JSON.parse(questions).ques;
-	body.sort(compareView);
+	questions.sort(compareView);
+	var size = 50 < questions.length ? 50: questions.length;
 	var output = new Array();
-	for(i = 0; i < 100; i++){
-		output[i] = body[i];
+	for(i = 0; i < size; i++){
+		output[i] = questions[i];
 	}
 	return output;
 }
@@ -37,8 +37,9 @@ function sortView(questions){
 //Sort by Score and Return 10
 function sortScore(questions){
 	questions.sort(compareScore);
+	var size = 10 < questions.length ? 10: questions.length;
 	var output = new Array();
-	for(i = 0; i < 10; i++){
+	for(i = 0; i < size; i++){
 		output[i] = questions[i];
 	}
 	return output;

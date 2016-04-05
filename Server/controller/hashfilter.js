@@ -14,37 +14,56 @@ function getHashVal(hasharr){
 
 //Comparator for sortIds
 function compareIds(id1, id2){
-	if(id1.hash < id2.hash)
-		return 1;
-	else if(id1.hash > id2.hash)
+	if(id1.dist < id2.dist)
 		return -1;
+	else if(id1.dist > id2.dist)
+		return 1;
 	else
 		return 0;
 }
 
 //Sort Ids based on hash distance
-function sortIds(object){
-	var filtered = object.sort(compareIds);
-	var size = 100 < object.length ? 100: object.length;
-	var returnObject = new Array();
+function sortHash(arr){
+	var filtered = arr.sort(compareIds);
+	var size = 100 < arr.length ? 100: arr.length;
+	var returnarr = new Array();
 	for(i = 0; i < size; i ++){
-		returnObject[i] = filtered[i];
+		returnarr[i] = filtered[i]["id"];
 	}
 
-	return returnObject;
+	return returnarr;
+}
+
+//Return an object with ids mapped to hash distance
+function getHashDistance(hashval, hasharr){
+	var returnarr = new Array();
+	for(index in hasharr){
+		var currobj = hasharr[index];
+
+		var distance = hashval ^ currobj["hash"];
+
+		var object = new Object();
+		object["id"] = currobj["id"];
+		object["dist"] = distance;
+
+		returnarr.push(object);
+	}
+
+	return returnarr;
 }
 
 var hashfilter = {
 	filter: function(body, context){
-		var bodyJSON = JSON.parse(body);
-		var ids = bodyJSON.ids;
-		var hash = bodyJSON.hash;
-		console.log(bodyJSON);
-		//var context_tags = context.split(' ');
+		var hasharr = JSON.parse(body).hashes;
+
 		var hashdata = simhash(context);
 		var hashval = getHashVal(hashdata);
 
-		return ids;
+		var hashdistarr = getHashDistance(hashval, hasharr);
+
+		var filteredarr = sortHash(hashdistarr);
+
+		return filteredarr;
 
 	}
 };

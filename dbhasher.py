@@ -31,7 +31,7 @@ def calchash(data):
 
 #function to insert into collection
 def insert(hashdata, id):
-	row = {"Id" : id, "Hash" : hashdata}
+	row = {"Id" : id, "Hash" : str(hashdata)}
 	row_id = collection.insert_one(row)
 	print row_id
 
