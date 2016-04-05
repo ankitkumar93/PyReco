@@ -9,6 +9,6 @@ var recomSchema = new Schema({
 });
 
 //Model
-var recomModel = mongoose.model('sol2', recomSchema);
+var recomModel = mongoose.model('sol3', recomSchema);
 
 module.exports = recomModel;

@@ -15,10 +15,10 @@ tagger = PerceptronTagger()
 
 
 MONGO_CONNECTION_STRING = "mongodb://localhost:27017/"
-REVIEWS_DATABASE = "sopyro"
+REVIEWS_DATABASE = "pyreco"
 TAGS_DATABASE = ""
 REVIEWS_COLLECTION = "questions"
-SOL2_KEYWORDS_COLLECTION = "sol2keywords"
+SOL2_KEYWORDS_COLLECTION = "sol3"
 
 questions_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][REVIEWS_COLLECTION]
 keywords_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][SOL2_KEYWORDS_COLLECTION]
@@ -38,12 +38,14 @@ from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer("english")
 
 def main():
-	synopses = []
+	body = []
 	Id = []
 	title = []
 	tags = []
+	synopses = []
+
 	for questions in question_cursor:
-		synopses.append(questions["Body"])
+		body.append(questions["Body"])
 		Id.append(questions["Id"])
 		title.append(questions["Title"])
 		tags.append(questions["Tags"])
@@ -52,7 +54,7 @@ def main():
 	#use extend so it's a big flat list of vocab
 	totalvocab_stemmed = []
 	totalvocab_tokenized = []
-	for i in synopses:
+	for i in body:
 		i = text_preprocess(i)
 		i = re.sub(r'python|Python|[^A-Za-z0-9. ]+',' ',i)
 		allwords_stemmed = tokenize_and_stem(i) #for each item in 'synopses', tokenize/stem
@@ -61,41 +63,41 @@ def main():
 		allwords_tokenized = tokenize_only(i)
 		totalvocab_tokenized.extend(allwords_tokenized)
 
+		#add i to synopses
+		synopses.append(i)
+
 	vocab_frame = pd.DataFrame({'words': totalvocab_tokenized}, index = totalvocab_stemmed)
 
 	from sklearn.feature_extraction.text import TfidfVectorizer
 
 	#define vectorizer parameters
-	tfidf_vectorizer = TfidfVectorizer(max_df=0.8,
-		min_df=0.02, stop_words='english',
+	tfidf_vectorizer = TfidfVectorizer(max_df=0.1,
+		min_df=0.05, stop_words='english',
 		use_idf=True, tokenizer=tokenize_and_stem)
 	
 	tfidf_matrix = tfidf_vectorizer.fit_transform(synopses) #fit the vectorizer to synopses
 
 	terms = tfidf_vectorizer.get_feature_names()
-<<<<<<< HEAD
 
-=======
->>>>>>> a2aaf530b49d582b02fd5e8ff24c548b74f7acf5
 	from sklearn.metrics.pairwise import cosine_similarity
 	dist = 1 - cosine_similarity(tfidf_matrix)
 	
 	from sklearn.cluster import KMeans
 	num_clusters = 100
-	km = KMeans(n_clusters=num_clusters)
+	km = KMeans(n_clusters=num_clusters, max_iter=100)
 	km.fit(tfidf_matrix)
 	clusters = km.labels_.tolist()
 
 	posts = {"Id": Id, 'synopsis': synopses, 'cluster': clusters}
 	frame = pd.DataFrame(posts, index = [clusters] , columns = ['Id', 'cluster'])
 	#sort cluster centers by proximity to centroid
-<<<<<<< HEAD
+
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1]
 	#ocab_frame = vocab_frame.fillna('',inplace=True)
-=======
+
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
 	print(order_centroids[0,:])
->>>>>>> a2aaf530b49d582b02fd5e8ff24c548b74f7acf5
+
 	done = 0
 	for i in range(num_clusters):
 		tags = []
@@ -117,7 +119,7 @@ def main():
 
 	
 def text_preprocess(words):
-	tokens = [word for word in words.split() if word not in my_stopwords]
+	tokens = [word for word in words.split() if word.lower() not in my_stopwords]
 	text = ' '.join([word for word in tokens])
 	tokens = nltk.word_tokenize(text)
 	tokens = set(tokens)
