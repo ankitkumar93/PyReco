@@ -71,20 +71,20 @@ def main():
 	from sklearn.feature_extraction.text import TfidfVectorizer
 
 	#define vectorizer parameters
-	tfidf_vectorizer = TfidfVectorizer(max_df=0.1,
-		min_df=0.05, stop_words='english',
-		use_idf=True, tokenizer=tokenize_and_stem)
+	tfidf_vectorizer = TfidfVectorizer(max_df=0.2, stop_words='english',
+		use_idf=True, smooth_idf=True, tokenizer=tokenize_and_stem)
 	
 	tfidf_matrix = tfidf_vectorizer.fit_transform(synopses) #fit the vectorizer to synopses
 
 	terms = tfidf_vectorizer.get_feature_names()
+	print(terms)
 
 	from sklearn.metrics.pairwise import cosine_similarity
 	dist = 1 - cosine_similarity(tfidf_matrix)
 	
 	from sklearn.cluster import KMeans
 	num_clusters = 100
-	km = KMeans(n_clusters=num_clusters, max_iter=100)
+	km = KMeans(n_clusters=num_clusters, max_iter=200)
 	km.fit(tfidf_matrix)
 	clusters = km.labels_.tolist()
 
@@ -96,20 +96,21 @@ def main():
 	#ocab_frame = vocab_frame.fillna('',inplace=True)
 
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
-	print(order_centroids[0,:])
+	#print(order_centroids[0,:6])
 
 	done = 0
 	for i in range(num_clusters):
 		tags = []
 		ids = []
 		#print("Cluster %d words: " % i, end='')
-		for ind in order_centroids[i, :]: #replace 6 with n words per cluster
+		for ind in order_centroids[i, :6]: #replace 6 with n words per cluster
 			word = vocab_frame.ix[terms[ind].split(' ')].values.tolist()[0][0]
 			tags.extend([word])
 			
 		#print("Cluster %d ids:" % i, end='')
-		for id in frame.ix[i]['Id'].values.tolist():
-			ids.extend([id])
+		if(hasattr(frame.ix[i]['Id'], 'values')):
+			for id in frame.ix[i]['Id'].values.tolist():
+				ids.extend([id])
 	
 		insert_keywords(tags, ids)
 		done += 1
