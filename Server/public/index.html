@@ -30,7 +30,17 @@ function fetchData(){
                 var b_div = document.createElement('div');
                 b_div.innerHTML = "Body:" + '<br>' + c_response.Body;
                 b_div.className = "title";
+                var ans_det = document.createElement('details');
+                var ans_sum = document.createElement('summary');
+                ans_sum.innerHTML = "Answer";
+                ans_det.innerHTML = "Answer is....";
+                var feedback_div = document.createElement('div');
+                var like_button = document.createElement('button');
+                var dislike_button = document.createElement('button');
+                feedback_div.appendChild(like_button);
+                feedback_div.appendChild(dislike_button);
                 r_div.appendChild(b_div);
+                r_div.appendChild(feedback_div);
                 dataDiv.appendChild(r_div);
             }
         }

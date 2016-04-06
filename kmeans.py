@@ -83,7 +83,7 @@ def main():
 	dist = 1 - cosine_similarity(tfidf_matrix)
 	
 	from sklearn.cluster import KMeans
-	num_clusters = 100
+	num_clusters = 10000
 	km = KMeans(n_clusters=num_clusters, max_iter=200)
 	km.fit(tfidf_matrix)
 	clusters = km.labels_.tolist()
