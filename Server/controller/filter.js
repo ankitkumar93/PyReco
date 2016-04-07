@@ -25,8 +25,9 @@ function compareScore(q1,q2){
 function sortView(questions){
 	var body = JSON.parse(questions).ques;
 	body.sort(compareView);
+	var size = 100 < body.length ? 100:body.size;
 	var output = new Array();
-	for(i = 0; i < 100; i++){
+	for(i = 0; i < size; i++){
 		output[i] = body[i];
 	}
 	return output;
@@ -36,7 +37,8 @@ function sortView(questions){
 function sortScore(questions){
 	questions.sort(compareScore);
 	var output = new Array();
-	for(i = 0; i < 10; i++){
+	var size = 10 < questions.length ? 10:questions.size;
+	for(i = 0; i < size; i++){
 		output[i] = questions[i];
 	}
 	return output;
@@ -45,9 +47,7 @@ function sortScore(questions){
 var filter = {
 	filterQuestions: function(questions){
 		var filter_view = sortView(questions);
-		console.log(filter_view);
 		var filter_score = sortScore(filter_view);
-		console.log(filter_score);
 		var filtered_questions = new Object();
 		filtered_questions.ques = filter_score;
 		return filtered_questions;
