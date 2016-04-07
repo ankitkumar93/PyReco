@@ -2,11 +2,16 @@
 <html>
 <!-- Custom JS -->
 <script>
+var session_date = new Date();
 function fetchData(){
+    //Define Global 
+
+
     //Grab Query String
     var queryString = window.location.search.split('?tag=')[1];
     var jsonToPass = JSON.stringify({"tag":queryString});
-    //Send Get Request
+    
+    //Send POST Request
     var getReq = new XMLHttpRequest();
     getReq.open("POST", "http://127.0.0.1:8080/req", true);
     getReq.setRequestHeader("Content-type", "application/json; charset=utf-8");
@@ -16,6 +21,7 @@ function fetchData(){
     getReq.onreadystatechange = function(){
         if(getReq.readyState == 4 && getReq.status == 200){
             var dataDiv = document.getElementById("data");
+            dataDiv.id = "parent";
             var reponseJSON = JSON.parse(getReq.responseText);
             var responseArray = reponseJSON.ques;
             for(index in responseArray){
@@ -30,24 +36,81 @@ function fetchData(){
                 var b_div = document.createElement('div');
                 b_div.innerHTML = "Body:" + '<br>' + c_response.Body;
                 b_div.className = "title";
+                r_div.appendChild(b_div);
                 var ans_det = document.createElement('details');
                 var ans_sum = document.createElement('summary');
                 ans_sum.innerHTML = "Answer";
                 ans_det.innerHTML = "Answer is....";
+                ans_det.addEventListener('click', function(event){
+                    clickHandler(event);
+                });
+                ans_det.appendChild(ans_sum);
+                r_div.appendChild(ans_det);
                 var feedback_div = document.createElement('div');
                 var like_button = document.createElement('button');
-                var dislike_button = document.createElement('button');
+                like_button.type="button";
+                like_button.innerHTML="Relevant";
+                like_button.addEventListener('click', function(){
+                    likeHandler();
+                });
                 feedback_div.appendChild(like_button);
-                feedback_div.appendChild(dislike_button);
-                r_div.appendChild(b_div);
                 r_div.appendChild(feedback_div);
                 dataDiv.appendChild(r_div);
             }
         }
     }
-
 }
 window.onload = fetchData;
+</script>
+
+<!-- JS For Click Logging -->
+<script>
+function clickHandler(event){
+    var summaryChild = event.target;
+    var answerTags = document.getElementsByTagName("summary");
+    var index = 0;
+   for(; index < answerTags.length; index++){
+    if(answerTags[index] == summaryChild)
+        logIndex(index);
+   }
+}
+
+function logIndex(index){
+    var timestamp = session_date.getTime();
+    var indexObj = new Object();
+    indexObj['id'] = timestamp;
+    indexObj['index'] = index;
+    var indexJson = JSON.stringify(indexObj);
+    var indexReq = new XMLHttpRequest();
+    indexReq.open("POST", "http://127.0.0.1:8080/addindex", true);
+    indexReq.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    indexReq.send(indexJson);
+}
+</script>
+
+<!-- JS For Like Logging -->
+<script>
+function likeHandler(){
+    var currentButton = window.event.target;
+    var buttonTags = document.getElementsByTagName("button");
+    var index = 0;
+   for(; index < buttonTags.length; index++){
+    if(buttonTags[index] == currentButton)
+        logLike(index);
+   }
+}
+
+function logLike(index){
+    var timestamp = session_date.getTime();
+    var likeObj = new Object();
+    likeObj['id'] = timestamp;
+    likeObj['index'] = index;
+    var likeJson = JSON.stringify(likeObj);
+    var likeReq = new XMLHttpRequest();
+    likeReq.open("POST", "http://127.0.0.1:8080/addlike", true);
+    likeReq.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    likeReq.send(likeJson);
+}
 </script>
 <!-- Custom JS Ends -->
     <body>

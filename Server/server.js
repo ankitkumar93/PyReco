@@ -9,6 +9,8 @@ var recommender = require('./controller/recommender.js');
 var question = require('./controller/question.js');
 var answer = require('./controller/answer.js');
 var hasher = require('./controller/hasher.js');
+var likeHandler = require('./controller/like.js');
+var indexHandler = require('./controller/indexHandler.js');
 
 //Init
 var app = express();
@@ -38,4 +40,12 @@ app.post('/gethash', function(req,res){
 
 app.post('/ques', function(req, res){
 	question.handleQuestions(req, res);
+});
+
+app.post('/addlike', function(req, res){
+	likeHandler.addLike(req, res);
+});
+
+app.post('/addindex', function(req, res){
+	indexHandler.addIndex(req, res);
 });
