@@ -15,17 +15,43 @@ function closeconnectiontodb(){
 }
 
 //Helper Functions
+//Helper Functions
+function getAnswers(questions, res){
+	console.log(questions);
+	request.post(
+		'http://127.0.0.1:8080/ans',
+		{form: {ques:questions}},
+		function (err, response, body){
+			closeconnectiontodb();
+			if(!err && response.statusCode == 200){
+				var answers = JSON.parse(body).ans;
+				if(answers.length == 0){
+					res.send(answers);
+				}else{
+					var posts = new Object();
+					posts['ques'] = questions;
+					posts['ans'] = answers;
+					res.send(posts);
+				}
+			}else{
+				res.send("answers: " + err);
+			}
+		}
+	);
+}
+
 function getQuestions(ids, res){
 	request.post(
 		'http://127.0.0.1:8080/ques',
 		{form: {ids: ids}},
 		function (err, response, body){
 			if(!err && response.statusCode == 200){
-				res.send(body);
+				var bodyJSON = JSON.parse(body);
+				getAnswers(bodyJSON.ques, res);
 			}else{
+				closeconnectiontodb();
 				res.send("questions: " + err);
 			}
-			closeconnectiontodb();
 		}
 	);
 }

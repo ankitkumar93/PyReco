@@ -8,6 +8,8 @@ var controller = require("./controller/request.js");
 var recommender = require('./controller/recommender.js');
 var question = require('./controller/question.js');
 var answer = require('./controller/answer.js');
+var likeHandler = require('./controller/like.js');
+var indexHandler = require('./controller/indexHandler.js');
 
 //Init
 var app = express();
@@ -33,4 +35,16 @@ app.post('/recom', function(req, res){
 
 app.post('/ques', function(req, res){
 	question.handleQuestions(req, res);
+});
+
+app.post('/ans', function(req, res){
+	answer.handleAnswers(req, res);
+});
+
+app.post('/addlike', function(req, res){
+	likeHandler.addLike(req, res);
+});
+
+app.post('/addindex', function(req, res){
+	indexHandler.addIndex(req, res);
 });
