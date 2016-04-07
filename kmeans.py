@@ -23,8 +23,8 @@ SOL2_KEYWORDS_COLLECTION = "sol3"
 questions_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][REVIEWS_COLLECTION]
 keywords_collection = MongoClient(MONGO_CONNECTION_STRING)[REVIEWS_DATABASE][SOL2_KEYWORDS_COLLECTION]
 question_cursor = questions_collection.find()
+question_cursor.batch_size(1000)
 questionCount = question_cursor.count()
-question_cursor.batch_size(50000)
 
 # load nltk's English stopwords as variable called 'stopwords'
 stopwords = nltk.corpus.stopwords.words('english')
@@ -44,16 +44,28 @@ def main():
 	tags = []
 	synopses = []
 
+	# my_corpus_size = 5000
+	# my_corpus_index = 0
+
 	for questions in question_cursor:
 		body.append(questions["Body"])
 		Id.append(questions["Id"])
 		title.append(questions["Title"])
 		tags.append(questions["Tags"])
+		# my_corpus_index += 1
+		# if my_corpus_index == my_corpus_size:
+		# 	break
+
+
+	# print(len(body))
 
 
 	#use extend so it's a big flat list of vocab
 	totalvocab_stemmed = []
 	totalvocab_tokenized = []
+
+	process_index = 0
+
 	for i in body:
 		i = text_preprocess(i)
 		i = re.sub(r'python|Python|[^A-Za-z0-9. ]+',' ',i)
@@ -65,6 +77,10 @@ def main():
 
 		#add i to synopses
 		synopses.append(i)
+
+		process_index +=1
+
+		print(process_index)
 
 	vocab_frame = pd.DataFrame({'words': totalvocab_tokenized}, index = totalvocab_stemmed)
 
@@ -81,12 +97,16 @@ def main():
 
 	from sklearn.metrics.pairwise import cosine_similarity
 	dist = 1 - cosine_similarity(tfidf_matrix)
+
+	print("consine done")
 	
 	from sklearn.cluster import KMeans
-	num_clusters = 10000
+	num_clusters = 500
 	km = KMeans(n_clusters=num_clusters, max_iter=200)
 	km.fit(tfidf_matrix)
 	clusters = km.labels_.tolist()
+
+	print ("clustering done!")
 
 	posts = {"Id": Id, 'synopsis': synopses, 'cluster': clusters}
 	frame = pd.DataFrame(posts, index = [clusters] , columns = ['Id', 'cluster'])
@@ -97,6 +117,8 @@ def main():
 
 	order_centroids = km.cluster_centers_.argsort()[:, ::-1] 
 	#print(order_centroids[0,:6])
+
+	print("db time!")
 
 	done = 0
 	for i in range(num_clusters):

@@ -63,7 +63,7 @@ function getHash(ids, tags, res){
 	);
 }
 
-function getRecommendation(tags, res){
+function getRecommendation(tags, bgtags, res){
 	request.post(
 		'http://127.0.0.1:8080/recom',
 		{form: {tags: tags}},
@@ -75,7 +75,7 @@ function getRecommendation(tags, res){
 					res.send(ids);
 				}
 				else
-					getHash(ids, tags, res);
+					getHash(ids, bgtags, res);
 			}else{
 				res.send("recommendor: " + err);
 				closeconnectiontodb();
@@ -89,14 +89,30 @@ var requestManager = {
 	handleRequest: function(req, res){
 		var query = req.body.tag;
 		var tags = query.split(';');
+		var length = tags.length;
+
+		var bgquery = tags[length - 1].split("=");
+		var bgtags = bgquery[1].split(",");
+		
 		var taglist = new Array();
-		for(index in tags){
-			var currtag = tags[index];
+		var bgtaglist =  new Array();
+		
+		var index_tag = 0;
+		while(index_tag < length - 1){
+			var currtag = tags[index_tag];
 			if(currtag != '')
 				taglist.push(currtag);
+			index_tag++;
 		}
+		
+		for(index in bgtags){
+			var currtag = bgtags[index];
+			if(currtag != '')
+				bgtaglist.push(currtag);
+		}
+
 		connecttodb();
-		getRecommendation(taglist, res);
+		getRecommendation(taglist, bgtaglist, res);
 	}
 };
 module.exports = requestManager;
