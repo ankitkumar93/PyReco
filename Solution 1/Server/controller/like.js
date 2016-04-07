@@ -15,7 +15,7 @@ function closeconnectiontodb(){
 }
 
 function addLikeToDb(data, res){
-	var dataJSON = {id: String(data.id), index: String(data.index)};
+	var dataJSON = {id: String(data.id), index: String(data.index), sol: "sol1"};
 	var likeData = new likeModel(dataJSON);
 	console.log(dataJSON);
 	connecttodb();
