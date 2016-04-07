@@ -5,7 +5,8 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 var likeSchema = new Schema({
 	id: String,
-	index: String
+	index: String,
+	sol: String
 }, {
 	collection: 'likes'
 });
