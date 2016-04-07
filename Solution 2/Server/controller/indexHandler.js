@@ -15,7 +15,7 @@ function closeconnectiontodb(){
 }
 
 function addIndexToDb(data, res){
-	var dataJSON = {id: String(data.id), index: String(data.index)};
+	var dataJSON = {id: String(data.id), index: String(data.index), sol: "sol2"};
 	var indexData = new indexModel(dataJSON);
 	console.log(dataJSON);
 	connecttodb();
