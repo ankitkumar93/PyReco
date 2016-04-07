@@ -4,7 +4,7 @@ var recomModel = require('../model/recomModel.js');
 function formQueryString(taglist){
 	var queryString = '';
 	for(index in taglist){
-		if(index < taglist.length - 1)
+		if(index < taglist.length)
 			queryString +='"' + taglist[index] + '" ';
 	}
 	return queryString;

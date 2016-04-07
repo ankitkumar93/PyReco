@@ -50,7 +50,8 @@ function getRecommendation(tags, res){
 var requestManager = {
 	handleRequest: function(req, res){
 		var query = req.body.tag;
-		var tags = query.split(';');
+		var tags = query.split(';&text=')[0].split(';');
+
 		connecttodb();
 		getRecommendation(tags, res);
 	}
