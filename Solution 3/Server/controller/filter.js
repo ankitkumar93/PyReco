@@ -49,9 +49,7 @@ var filter = {
 	filterQuestions: function(questions){
 		var filter_view = sortView(questions);
 		var filter_score = sortScore(filter_view);
-		var filtered_questions = new Object();
-		filtered_questions.ques = filter_score;
-		return filtered_questions;
+		return filter_score;
 	}
 };
 

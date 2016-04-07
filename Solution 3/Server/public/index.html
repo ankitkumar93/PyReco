@@ -22,8 +22,9 @@ function fetchData(){
         if(getReq.readyState == 4 && getReq.status == 200){
             var dataDiv = document.getElementById("data");
             dataDiv.id = "parent";
-            var reponseJSON = JSON.parse(getReq.responseText);
-            var responseArray = reponseJSON.ques;
+            var responseJSON = JSON.parse(getReq.responseText);
+            var responseArray = responseJSON.ques;
+            var answerArray = responseJSON.ans;
             for(index in responseArray){
                 var r_div = document.createElement('div');
                 r_div.id = "responseDiv";
@@ -37,10 +38,11 @@ function fetchData(){
                 b_div.innerHTML = "Body:" + '<br>' + c_response.Body;
                 b_div.className = "title";
                 r_div.appendChild(b_div);
+                var answer_response = answerArray[index];
                 var ans_det = document.createElement('details');
                 var ans_sum = document.createElement('summary');
                 ans_sum.innerHTML = "Answer";
-                ans_det.innerHTML = "Answer is....";
+                ans_det.innerHTML = answer_response.Body;
                 ans_det.addEventListener('click', function(event){
                     clickHandler(event);
                 });

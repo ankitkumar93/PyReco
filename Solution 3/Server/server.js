@@ -8,6 +8,7 @@ var controller = require("./controller/request.js");
 var recommender = require('./controller/recommender.js');
 var question = require('./controller/question.js');
 var answer = require('./controller/answer.js');
+var answer = require('./controller/answer.js');
 var hasher = require('./controller/hasher.js');
 var likeHandler = require('./controller/like.js');
 var indexHandler = require('./controller/indexHandler.js');
@@ -40,6 +41,10 @@ app.post('/gethash', function(req,res){
 
 app.post('/ques', function(req, res){
 	question.handleQuestions(req, res);
+});
+
+app.post('/ans', function(req, res){
+	answer.handleAnswers(req, res);
 });
 
 app.post('/addlike', function(req, res){
