@@ -7,7 +7,7 @@
 * [February Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Reports/report_feb1.pdf)
   
 **Code Base:**  
-* [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/solution1)  
-* [Solution #2](https://github.com/ankitkumar93/csc510-se-project/tree/solution2)  
-* [Solution #3](https://github.com/ankitkumar93/csc510-se-project/tree/solution3)  
+* [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/master/Code%20Base/Solution%201)  
+* [Solution #2](https://github.com/ankitkumar93/csc510-se-project/tree/master/Code%20Base/Solution%202)  
+* [Solution #3](https://github.com/ankitkumar93/csc510-se-project/tree/master/Code%20Base/Solution%203)  
 * [DB Import](https://github.com/ankitkumar93/csc510-se-project/tree/db_import)  
