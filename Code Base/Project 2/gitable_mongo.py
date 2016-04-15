@@ -37,7 +37,7 @@ coll_collaborators = db[coll_collaborators_name]
 coll_commits = db[coll_commits_name]
 
 #token
-token = "b99728041648c8b61ea79868d5f0ed9eaa725ddf"
+token = "<TOKEN HERE>"
 
 def dump_data(url, collection):
   try:
