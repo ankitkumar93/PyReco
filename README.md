@@ -5,6 +5,7 @@
 * [Contributers](https://github.com/ankitkumar93/csc510-se-project/graphs/contributors)  
 * [April Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Reports/report_aprl1.pdf)  
 * [February Report](https://github.com/ankitkumar93/csc510-se-project/blob/master/Reports/report_feb1.pdf)
+* [Talk](https://github.com/ankitkumar93/csc510-se-project/blob/master/Reports/talk.pdf)
   
 **Code Base:**  
 * [Solution #1](https://github.com/ankitkumar93/csc510-se-project/tree/master/Code%20Base/Solution%201)  
