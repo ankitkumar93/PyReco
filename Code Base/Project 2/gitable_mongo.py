@@ -29,15 +29,18 @@ from pymongo import MongoClient
 #db
 dbname = "project2"
 coll_issues_name = "raw_issues"
-coll_collaborators_name = "raw_collaboraters"
 coll_commits_name = "raw_commits"
+coll_milestones_name = "raw_milestones"
 db = MongoClient()[dbname]
 coll_issues = db[coll_issues_name]
-coll_collaborators = db[coll_collaborators_name]
 coll_commits = db[coll_commits_name]
+coll_milestones = db[coll_milestones_name]
+
+#repos
+repo_names = ['ankitkumar93/csc510-se-project', 'jordy-jose/CSC_510_group_d', 'moharnab123saikia/CSC510-group-f', 'cleebp/csc-510-group-g']
 
 #token
-token = "<TOKEN HERE>"
+token = "1a0895991496c60384e1b420d43a397e161951c9"
 
 def dump_data(url, collection):
   try:
@@ -53,41 +56,42 @@ def dump_data(url, collection):
     print("Contact TA")
     return False
 
-def fetchIssues():
+def fetchIssues(repo_name):
   print("Issues Init")
   page = 1
   while(True):
-    doNext = dump_data('https://api.github.com/repos/ankitkumar93/csc510-se-project/issues/events?page=' + str(page), coll_issues)
+    doNext = dump_data('https://api.github.com/repos/' + repo_name + '/issues/events?page=' + str(page), coll_issues)
     print("page "+ str(page))
     page += 1
     if not doNext : break
   print("Issues Done")
 
-def fetchCollaboraters():
-  print("Collaboraters Init")
-  page = 1
-  while(True):
-    doNext = dump_data('https://api.github.com/repos/ankitkumar93/csc510-se-project/collaborators?page=' + str(page), coll_collaborators)
-    print("page "+ str(page))
-    page += 1
-    if not doNext : break
-  print("Collaboraters Done")
-
-def fetchCommits():
+def fetchCommits(repo_name):
   print("Commits Init")
   page = 1
   while(True):
-    doNext = dump_data('https://api.github.com/repos/ankitkumar93/csc510-se-project/commits?page=' + str(page), coll_commits)
+    doNext = dump_data('https://api.github.com/repos/' + repo_name + '/commits?page=' + str(page), coll_commits)
     print("page "+ str(page))
     page += 1
     if not doNext : break
   print("Commits Done")
 
+def fetchMilestones(repo_name):
+  print("Milestones Init")
+  page = 1
+  while(True):
+    doNext = dump_data('https://api.github.com/repos/' + repo_name + '/milestones?state=all&page=' + str(page), coll_milestones)
+    print("page "+ str(page))
+    page += 1
+    if not doNext : break
+  print("Milstones Done")
+
 def main():
-  fetchIssues()
-  fetchCommits()
-  fetchCollaboraters()
+    for repo_name in repo_names:
+        print("Repo Being Considered: " + repo_name)
+        fetchIssues(repo_name)
+        fetchCommits(repo_name)
+        fetchMilestones(repo_name)
 
 if __name__ == "__main__":
   main()
-
