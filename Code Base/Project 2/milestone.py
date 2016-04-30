@@ -19,6 +19,7 @@ coll_name_issues = db[coll_name_issues]
 
 
 milestones_cursor = coll_name_milestone_raw.find()
+repos = {"https://api.github.com/repos/ankitkumar93/csc510-se-project" : 0 ,"https://api.github.com/repos/jordy-jose/CSC_510_group_d" : 1 , "https://api.github.com/repos/moharnab123saikia/CSC510-group-f" : 2, "https://api.github.com/repos/cleebp/csc-510-group-g" : 3 }
 
 
 #fetch list of issues for a repo
@@ -42,6 +43,10 @@ def fetch_issues(milestone_id):
 def filter_milestones():
     print("Filterng milestones Init")
     for milestone in milestones_cursor:
+        url = milestone['url']
+        index = url.index('milestones')
+        git_url = url[:index-1]
+        Repo_ID = repos[git_url]
         Description = milestone['description']
         Created_Timestamp = milestone['created_at']
         Due_Timestamp = milestone['due_on']
@@ -49,15 +54,16 @@ def filter_milestones():
         milestone_id = milestone['id']
         milestone_title = milestone['title']
         issues = fetch_issues(milestone_id)
-        insert_milestone(Created_Timestamp,Due_Timestamp,Closed_Timestamp,milestone_id,milestone_title,issues)
+        insert_milestone(Repo_ID,Created_Timestamp,Due_Timestamp,Closed_Timestamp,milestone_id,milestone_title,issues)
         
 
     print("Filterng milestones Done")
 
 # insert milestone
-def insert_milestone(Created_Timestamp, Due_Timestamp, Closed_Timestamp,milestone_id,milestone_title,issues):
+def insert_milestone(Repo_ID, Created_Timestamp, Due_Timestamp, Closed_Timestamp,milestone_id,milestone_title,issues):
   #print('inside insert ')
   coll_name_milestones.insert_one({
+    "Repo_ID" : Repo_ID,
     "Milestone_ID" : milestone_id,
     "Milestone_Title" : milestone_title,
     "Created_Timestamp" : Created_Timestamp,
