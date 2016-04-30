@@ -1,0 +1,451 @@
+{"_id":{"$oid":"572515a912ccff03ad5d0e8e"},"Dev_ID":1,"Message":"anonimity done","Repo_ID":0,"Timestamp":"2016-04-30T02:33:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e8f"},"Dev_ID":1,"Message":"Data Fetched","Repo_ID":0,"Timestamp":"2016-04-30T01:22:13Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e90"},"Dev_ID":1,"Message":"Raw Data Fetch Done","Repo_ID":0,"Timestamp":"2016-04-30T01:13:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e91"},"Dev_ID":1,"Message":"Added Data Collection Instructions","Repo_ID":0,"Timestamp":"2016-04-30T00:27:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e92"},"Dev_ID":1,"Message":"Talk Update","Repo_ID":0,"Timestamp":"2016-04-19T20:22:13Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e93"},"Dev_ID":1,"Message":"Talk Updated","Repo_ID":0,"Timestamp":"2016-04-19T19:02:29Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e94"},"Dev_ID":1,"Message":"Talk Link Added","Repo_ID":0,"Timestamp":"2016-04-19T17:19:43Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e95"},"Dev_ID":1,"Message":"Talk Updated","Repo_ID":0,"Timestamp":"2016-04-19T17:15:56Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e96"},"Dev_ID":1,"Message":"Talk Updated","Repo_ID":0,"Timestamp":"2016-04-19T04:16:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e97"},"Dev_ID":1,"Message":"Project 2 Gitable Update","Repo_ID":0,"Timestamp":"2016-04-15T05:07:03Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e98"},"Dev_ID":1,"Message":"Project 2 Gitable Update","Repo_ID":0,"Timestamp":"2016-04-15T04:56:43Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e99"},"Dev_ID":1,"Message":"Init Gitable Modified Scrip","Repo_ID":0,"Timestamp":"2016-04-09T22:02:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9a"},"Dev_ID":1,"Message":"Merge branch 'master' of https://github.com/ankitkumar93/csc510-se-project","Repo_ID":0,"Timestamp":"2016-04-08T05:20:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9b"},"Dev_ID":1,"Message":"Added Blank Talk","Repo_ID":0,"Timestamp":"2016-04-08T05:20:01Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9c"},"Dev_ID":1,"Message":"Update Solution Merged Links","Repo_ID":0,"Timestamp":"2016-04-08T04:19:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9d"},"Dev_ID":1,"Message":"Restructured Code Base","Repo_ID":0,"Timestamp":"2016-04-08T04:17:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9e"},"Dev_ID":1,"Message":"Merge Done","Repo_ID":0,"Timestamp":"2016-04-08T04:17:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0e9f"},"Dev_ID":1,"Message":"Merging","Repo_ID":0,"Timestamp":"2016-04-08T04:16:25Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea0"},"Dev_ID":1,"Message":"Merging Solution 2Merge branch 'solution2'","Repo_ID":0,"Timestamp":"2016-04-08T04:15:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea1"},"Dev_ID":1,"Message":"Merging","Repo_ID":0,"Timestamp":"2016-04-08T04:14:45Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea2"},"Dev_ID":1,"Message":"Merge branch 'solution1'Adding solution 1","Repo_ID":0,"Timestamp":"2016-04-08T04:13:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea3"},"Dev_ID":1,"Message":"Added master data","Repo_ID":0,"Timestamp":"2016-04-08T04:13:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea4"},"Dev_ID":1,"Message":"Merge branch 'master' of https://github.com/ankitkumar93/csc510-se-project","Repo_ID":0,"Timestamp":"2016-04-08T04:00:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea5"},"Dev_ID":1,"Message":"Report Updated","Repo_ID":0,"Timestamp":"2016-04-08T03:59:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea6"},"Dev_ID":1,"Message":"Graphs Added to Report","Repo_ID":0,"Timestamp":"2016-04-08T03:54:16Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea7"},"Dev_ID":1,"Message":"Update README.md","Repo_ID":0,"Timestamp":"2016-04-08T03:47:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea8"},"Dev_ID":1,"Message":"April Report Added","Repo_ID":0,"Timestamp":"2016-04-08T03:45:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ea9"},"Dev_ID":1,"Message":"Tel Fix","Repo_ID":0,"Timestamp":"2016-04-07T23:14:23Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eaa"},"Dev_ID":1,"Message":"T fix","Repo_ID":0,"Timestamp":"2016-04-07T23:12:24Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eab"},"Dev_ID":1,"Message":"T Fix","Repo_ID":0,"Timestamp":"2016-04-07T23:10:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eac"},"Dev_ID":1,"Message":"Fix","Repo_ID":0,"Timestamp":"2016-04-07T23:07:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ead"},"Dev_ID":1,"Message":"Added Telemetry","Repo_ID":0,"Timestamp":"2016-04-07T23:06:30Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eae"},"Dev_ID":1,"Message":"Added Telemetry","Repo_ID":0,"Timestamp":"2016-04-07T22:56:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eaf"},"Dev_ID":1,"Message":"Added Answer Fetch","Repo_ID":0,"Timestamp":"2016-04-07T22:35:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb0"},"Dev_ID":1,"Message":"Fixed Structure","Repo_ID":0,"Timestamp":"2016-04-07T19:37:32Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb1"},"Dev_ID":1,"Message":"Plugin Updated","Repo_ID":0,"Timestamp":"2016-04-07T19:36:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb2"},"Dev_ID":1,"Message":"Updated Plugin","Repo_ID":0,"Timestamp":"2016-04-07T19:35:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb3"},"Dev_ID":1,"Message":"Updated Plugin","Repo_ID":0,"Timestamp":"2016-04-07T19:34:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb4"},"Dev_ID":1,"Message":"Fixed Directory Structure","Repo_ID":0,"Timestamp":"2016-04-07T19:30:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb5"},"Dev_ID":1,"Message":"Fixed DStruct","Repo_ID":0,"Timestamp":"2016-04-07T19:29:19Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb6"},"Dev_ID":1,"Message":"Fixed Directory Structure","Repo_ID":0,"Timestamp":"2016-04-07T19:27:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb7"},"Dev_ID":1,"Message":"Added Telemetry AUTO","Repo_ID":0,"Timestamp":"2016-04-07T06:34:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb8"},"Dev_ID":1,"Message":"DOne","Repo_ID":0,"Timestamp":"2016-04-07T03:27:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eb9"},"Dev_ID":1,"Message":"Fixed Clustering","Repo_ID":0,"Timestamp":"2016-04-07T03:20:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eba"},"Dev_ID":1,"Message":"SOl3 Fixed","Repo_ID":0,"Timestamp":"2016-04-07T03:05:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ebb"},"Dev_ID":1,"Message":"Added Background data collection","Repo_ID":0,"Timestamp":"2016-04-06T23:54:41Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ebc"},"Dev_ID":1,"Message":"Modifeid Clustering","Repo_ID":0,"Timestamp":"2016-04-06T06:01:32Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ebd"},"Dev_ID":1,"Message":"updated clustering for tokenization","Repo_ID":0,"Timestamp":"2016-04-05T05:38:02Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ebe"},"Dev_ID":1,"Message":"Sol3 Fix","Repo_ID":0,"Timestamp":"2016-04-05T04:21:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ebf"},"Dev_ID":1,"Message":"Hasher Fix","Repo_ID":0,"Timestamp":"2016-03-31T06:45:21Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec0"},"Dev_ID":1,"Message":"Modified Bagofwords.py","Repo_ID":0,"Timestamp":"2016-03-31T06:33:27Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec1"},"Dev_ID":1,"Message":"Bug Fix","Repo_ID":0,"Timestamp":"2016-03-31T05:52:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec2"},"Dev_ID":1,"Message":"Bug Fix","Repo_ID":0,"Timestamp":"2016-03-31T05:36:32Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec3"},"Dev_ID":1,"Message":"Simhash filter in progress","Repo_ID":0,"Timestamp":"2016-03-29T08:09:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec4"},"Dev_ID":1,"Message":"Added simhash","Repo_ID":0,"Timestamp":"2016-03-29T08:01:25Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec5"},"Dev_ID":1,"Message":"Solution 3 init","Repo_ID":0,"Timestamp":"2016-03-29T00:12:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec6"},"Dev_ID":1,"Message":"Filters Added","Repo_ID":0,"Timestamp":"2016-03-29T00:08:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec7"},"Dev_ID":3,"Message":"Merge branch 'solution2' of https://github.com/ankitkumar93/csc510-se-project into solution2\n\nConflicts:\n\u0009kmeans.py","Repo_ID":0,"Timestamp":"2016-03-04T07:37:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec8"},"Dev_ID":3,"Message":"updating k means file","Repo_ID":0,"Timestamp":"2016-03-04T07:37:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ec9"},"Dev_ID":3,"Message":"adding updated data file","Repo_ID":0,"Timestamp":"2016-03-04T07:34:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eca"},"Dev_ID":1,"Message":"Sol2 Integrated","Repo_ID":0,"Timestamp":"2016-03-04T05:13:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ecb"},"Dev_ID":0,"Message":"updating lda model file","Repo_ID":0,"Timestamp":"2016-03-04T04:45:04Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ecc"},"Dev_ID":0,"Message":"adding new stopwords to the file","Repo_ID":0,"Timestamp":"2016-03-04T04:42:53Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ecd"},"Dev_ID":0,"Message":"changing kmeans algo","Repo_ID":0,"Timestamp":"2016-03-04T04:39:48Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ece"},"Dev_ID":3,"Message":"updating stopwords file","Repo_ID":0,"Timestamp":"2016-03-04T04:34:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ecf"},"Dev_ID":3,"Message":"updating kmeans file","Repo_ID":0,"Timestamp":"2016-03-04T04:32:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed0"},"Dev_ID":3,"Message":"adding solution 2 data file","Repo_ID":0,"Timestamp":"2016-03-04T04:31:08Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed1"},"Dev_ID":3,"Message":"updating kmeans file","Repo_ID":0,"Timestamp":"2016-03-04T02:56:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed2"},"Dev_ID":3,"Message":"updating kmeans file","Repo_ID":0,"Timestamp":"2016-03-04T02:40:41Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed3"},"Dev_ID":3,"Message":"adding kmeans file","Repo_ID":0,"Timestamp":"2016-03-04T01:49:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed4"},"Dev_ID":1,"Message":"Solution 2 Added Interfacace","Repo_ID":0,"Timestamp":"2016-03-03T23:14:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed5"},"Dev_ID":1,"Message":"March 1 Done","Repo_ID":0,"Timestamp":"2016-03-02T03:54:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed6"},"Dev_ID":1,"Message":"Fixed Survey Response link","Repo_ID":0,"Timestamp":"2016-03-02T03:51:02Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed7"},"Dev_ID":1,"Message":"Fixed Survey Link Indentation","Repo_ID":0,"Timestamp":"2016-03-02T03:49:29Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed8"},"Dev_ID":1,"Message":"Added Survey Links","Repo_ID":0,"Timestamp":"2016-03-02T03:48:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ed9"},"Dev_ID":0,"Message":"Updating Telemetry Link","Repo_ID":0,"Timestamp":"2016-03-02T03:16:28Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eda"},"Dev_ID":0,"Message":"Updating links and bullets","Repo_ID":0,"Timestamp":"2016-03-02T03:15:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0edb"},"Dev_ID":3,"Message":"Adding Telemetry file","Repo_ID":0,"Timestamp":"2016-03-02T03:06:38Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0edc"},"Dev_ID":3,"Message":"updated links","Repo_ID":0,"Timestamp":"2016-03-02T02:55:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0edd"},"Dev_ID":3,"Message":"Update README.md","Repo_ID":0,"Timestamp":"2016-03-02T02:55:08Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ede"},"Dev_ID":3,"Message":"Update README.md","Repo_ID":0,"Timestamp":"2016-03-02T02:53:47Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0edf"},"Dev_ID":1,"Message":"Update and rename Telemetry.md to Evaluation.md","Repo_ID":0,"Timestamp":"2016-03-02T02:50:26Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee0"},"Dev_ID":3,"Message":"Update README.md","Repo_ID":0,"Timestamp":"2016-03-02T02:49:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee1"},"Dev_ID":1,"Message":"updated indentation","Repo_ID":0,"Timestamp":"2016-03-02T02:49:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee2"},"Dev_ID":1,"Message":"Update Telemetry.md","Repo_ID":0,"Timestamp":"2016-03-02T02:48:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee3"},"Dev_ID":3,"Message":"Updating links and bullets","Repo_ID":0,"Timestamp":"2016-03-02T02:48:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee4"},"Dev_ID":3,"Message":"Fixed indentation","Repo_ID":0,"Timestamp":"2016-03-02T02:39:41Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee5"},"Dev_ID":3,"Message":"updated links","Repo_ID":0,"Timestamp":"2016-03-02T02:38:02Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee6"},"Dev_ID":3,"Message":"README updated","Repo_ID":0,"Timestamp":"2016-03-02T02:35:55Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee7"},"Dev_ID":2,"Message":"Merge branch 'master' of https://github.com/ankitkumar93/csc510-se-project","Repo_ID":0,"Timestamp":"2016-03-02T02:32:32Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee8"},"Dev_ID":2,"Message":"Telemetry","Repo_ID":0,"Timestamp":"2016-03-02T02:32:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ee9"},"Dev_ID":1,"Message":"Solution 1 Ready","Repo_ID":0,"Timestamp":"2016-03-01T20:26:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eea"},"Dev_ID":3,"Message":"adding lda clustering file","Repo_ID":0,"Timestamp":"2016-03-01T05:50:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eeb"},"Dev_ID":3,"Message":"adding stopwords BOW file","Repo_ID":0,"Timestamp":"2016-03-01T05:50:24Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eec"},"Dev_ID":3,"Message":"adding Topic Modeling test code file","Repo_ID":0,"Timestamp":"2016-03-01T05:49:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eed"},"Dev_ID":3,"Message":"adding test xml file","Repo_ID":0,"Timestamp":"2016-03-01T05:49:29Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eee"},"Dev_ID":3,"Message":"Adding test post data","Repo_ID":0,"Timestamp":"2016-03-01T05:48:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eef"},"Dev_ID":3,"Message":"Adding clustering file","Repo_ID":0,"Timestamp":"2016-03-01T05:47:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef0"},"Dev_ID":3,"Message":"solution2 init","Repo_ID":0,"Timestamp":"2016-03-01T05:44:48Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef1"},"Dev_ID":1,"Message":"Removed Junk Files","Repo_ID":0,"Timestamp":"2016-03-01T05:43:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef2"},"Dev_ID":3,"Message":"Adding updated README file","Repo_ID":0,"Timestamp":"2016-03-01T05:40:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef3"},"Dev_ID":0,"Message":" Moving files to solution 1","Repo_ID":0,"Timestamp":"2016-03-01T05:39:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef4"},"Dev_ID":0,"Message":" Moving files to solution 1","Repo_ID":0,"Timestamp":"2016-03-01T05:38:59Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef5"},"Dev_ID":0,"Message":" Moving files to solution 1","Repo_ID":0,"Timestamp":"2016-03-01T05:37:01Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef6"},"Dev_ID":0,"Message":"Adding solution1 db data import","Repo_ID":0,"Timestamp":"2016-03-01T05:32:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef7"},"Dev_ID":1,"Message":"Fixing Master","Repo_ID":0,"Timestamp":"2016-03-01T04:34:26Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef8"},"Dev_ID":3,"Message":"Merge pull request #24 from ankitkumar93/db_import\n\nDb import","Repo_ID":0,"Timestamp":"2016-03-01T04:20:59Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0ef9"},"Dev_ID":3,"Message":"Adding mongodb import export command notes","Repo_ID":0,"Timestamp":"2016-03-01T04:13:33Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0efa"},"Dev_ID":1,"Message":"Answer Db","Repo_ID":0,"Timestamp":"2016-02-29T03:50:27Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0efb"},"Dev_ID":1,"Message":"Answer Collection Added","Repo_ID":0,"Timestamp":"2016-02-29T01:30:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0efc"},"Dev_ID":3,"Message":"deleting file as uploaded in wrong branch","Repo_ID":0,"Timestamp":"2016-02-28T17:38:21Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0efd"},"Dev_ID":3,"Message":"Adding Clustering code","Repo_ID":0,"Timestamp":"2016-02-28T17:35:01Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0efe"},"Dev_ID":1,"Message":"Questios JSON Size Reduced","Repo_ID":0,"Timestamp":"2016-02-27T21:25:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0eff"},"Dev_ID":1,"Message":"New HTML Filter Added","Repo_ID":0,"Timestamp":"2016-02-27T07:00:03Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f00"},"Dev_ID":1,"Message":"DB Processor Modified","Repo_ID":0,"Timestamp":"2016-02-26T07:58:43Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f01"},"Dev_ID":2,"Message":"Plugin Done","Repo_ID":0,"Timestamp":"2016-02-26T05:12:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f02"},"Dev_ID":2,"Message":"Plugin Done","Repo_ID":0,"Timestamp":"2016-02-26T05:08:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f03"},"Dev_ID":1,"Message":"Plugin Dev Started","Repo_ID":0,"Timestamp":"2016-02-26T03:26:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f04"},"Dev_ID":1,"Message":"Dump 0 File Online","Repo_ID":0,"Timestamp":"2016-02-25T23:25:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f05"},"Dev_ID":1,"Message":"sample db up","Repo_ID":0,"Timestamp":"2016-02-21T20:50:45Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f06"},"Dev_ID":1,"Message":"db creator in python","Repo_ID":0,"Timestamp":"2016-02-21T20:20:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f07"},"Dev_ID":1,"Message":"Few Data Dumps","Repo_ID":0,"Timestamp":"2016-02-21T19:31:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f08"},"Dev_ID":1,"Message":"Small Dump","Repo_ID":0,"Timestamp":"2016-02-21T05:43:37Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f09"},"Dev_ID":1,"Message":"Few Dumps of Data Created","Repo_ID":0,"Timestamp":"2016-02-21T05:40:20Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0a"},"Dev_ID":1,"Message":"Init Branch","Repo_ID":0,"Timestamp":"2016-02-16T21:57:40Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0b"},"Dev_ID":1,"Message":"README Created","Repo_ID":0,"Timestamp":"2016-02-16T20:18:25Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0c"},"Dev_ID":1,"Message":"Feb 1 Report","Repo_ID":0,"Timestamp":"2016-02-01T05:42:27Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0d"},"Dev_ID":1,"Message":"Feb 1 Report","Repo_ID":0,"Timestamp":"2016-02-01T05:40:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0e"},"Dev_ID":1,"Message":"Merge branch 'master' of https://github.com/ankitkumar93/csc510-se-project","Repo_ID":0,"Timestamp":"2016-02-01T05:40:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f0f"},"Dev_ID":1,"Message":"Feb 1 Report","Repo_ID":0,"Timestamp":"2016-02-01T05:39:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f10"},"Dev_ID":1,"Message":"Ankit Idea TXT","Repo_ID":0,"Timestamp":"2016-01-12T21:33:03Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f11"},"Dev_ID":6,"Message":"Added files via upload","Repo_ID":1,"Timestamp":"2016-04-08T04:00:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f12"},"Dev_ID":6,"Message":"Added files via upload","Repo_ID":1,"Timestamp":"2016-04-08T03:54:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f13"},"Dev_ID":6,"Message":"Delete RestoScrapper_Apr1_Report.pdf","Repo_ID":1,"Timestamp":"2016-04-08T03:52:25Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f14"},"Dev_ID":6,"Message":"Added files via upload","Repo_ID":1,"Timestamp":"2016-04-08T03:51:09Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f15"},"Dev_ID":6,"Message":"refactoring","Repo_ID":1,"Timestamp":"2016-04-07T19:12:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f16"},"Dev_ID":7,"Message":"report changes","Repo_ID":1,"Timestamp":"2016-04-08T01:48:47Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f17"},"Dev_ID":4,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-04-07T23:07:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f18"},"Dev_ID":7,"Message":"Updated presentation link","Repo_ID":1,"Timestamp":"2016-04-07T20:17:27Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f19"},"Dev_ID":7,"Message":"presentation","Repo_ID":1,"Timestamp":"2016-04-07T20:15:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1a"},"Dev_ID":5,"Message":"font changes","Repo_ID":1,"Timestamp":"2016-04-07T20:01:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1b"},"Dev_ID":7,"Message":"Changes to the images in report","Repo_ID":1,"Timestamp":"2016-04-07T19:58:41Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1c"},"Dev_ID":7,"Message":"Added link to report","Repo_ID":1,"Timestamp":"2016-04-07T18:53:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1d"},"Dev_ID":7,"Message":"Added link to report","Repo_ID":1,"Timestamp":"2016-04-07T18:52:30Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1e"},"Dev_ID":7,"Message":"Added link to report","Repo_ID":1,"Timestamp":"2016-04-07T18:52:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f1f"},"Dev_ID":7,"Message":"Project report april 1","Repo_ID":1,"Timestamp":"2016-04-07T18:49:45Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f20"},"Dev_ID":4,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-04-07T18:28:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f21"},"Dev_ID":4,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-04-07T18:18:40Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f22"},"Dev_ID":4,"Message":"onclick for yelp tripA and foursq","Repo_ID":1,"Timestamp":"2016-04-07T17:02:16Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f23"},"Dev_ID":4,"Message":"layout and color change based on feedback","Repo_ID":1,"Timestamp":"2016-04-07T16:58:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f24"},"Dev_ID":4,"Message":"modified code for time log","Repo_ID":1,"Timestamp":"2016-04-07T07:51:33Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f25"},"Dev_ID":5,"Message":"added stats display page","Repo_ID":1,"Timestamp":"2016-04-07T07:44:00Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f26"},"Dev_ID":4,"Message":"code for collecting user click logs per seesion","Repo_ID":1,"Timestamp":"2016-04-07T07:36:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f27"},"Dev_ID":5,"Message":"stats for web","Repo_ID":1,"Timestamp":"2016-04-07T07:08:24Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f28"},"Dev_ID":6,"Message":"fixed links in show page","Repo_ID":1,"Timestamp":"2016-04-07T06:28:37Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f29"},"Dev_ID":6,"Message":"added Book Now Button","Repo_ID":1,"Timestamp":"2016-04-06T16:45:09Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2a"},"Dev_ID":6,"Message":"added Book Now","Repo_ID":1,"Timestamp":"2016-04-06T02:48:19Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2b"},"Dev_ID":6,"Message":"added hyperlinks","Repo_ID":1,"Timestamp":"2016-04-05T20:48:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2c"},"Dev_ID":6,"Message":"changed the placement of the reviews","Repo_ID":1,"Timestamp":"2016-04-03T05:40:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2d"},"Dev_ID":6,"Message":"added star ratings to individual reviews","Repo_ID":1,"Timestamp":"2016-04-03T05:21:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2e"},"Dev_ID":6,"Message":"added negative reviews","Repo_ID":1,"Timestamp":"2016-04-03T05:18:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f2f"},"Dev_ID":4,"Message":"book now implementation","Repo_ID":1,"Timestamp":"2016-04-01T06:36:47Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f30"},"Dev_ID":4,"Message":"layout changes in restaurant view","Repo_ID":1,"Timestamp":"2016-04-01T06:32:56Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f31"},"Dev_ID":5,"Message":"added restaurant url to schema closes #73","Repo_ID":1,"Timestamp":"2016-04-01T06:00:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f32"},"Dev_ID":4,"Message":"negative review implementation","Repo_ID":1,"Timestamp":"2016-04-01T05:32:29Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f33"},"Dev_ID":7,"Message":"removed aws access key from the code","Repo_ID":1,"Timestamp":"2016-04-01T04:03:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f34"},"Dev_ID":7,"Message":"updated the restaurant url in json","Repo_ID":1,"Timestamp":"2016-03-31T23:55:12Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f35"},"Dev_ID":5,"Message":"Updated review controller to parse negative reviews from db closes #64","Repo_ID":1,"Timestamp":"2016-03-31T21:16:53Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f36"},"Dev_ID":5,"Message":"Added negative reviews to db schema closes #63","Repo_ID":1,"Timestamp":"2016-03-31T21:00:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f37"},"Dev_ID":7,"Message":"updated json and code","Repo_ID":1,"Timestamp":"2016-03-31T16:35:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f38"},"Dev_ID":7,"Message":"updated csv file","Repo_ID":1,"Timestamp":"2016-03-31T16:33:08Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f39"},"Dev_ID":7,"Message":"code for parsing newgative reviews","Repo_ID":1,"Timestamp":"2016-03-31T05:42:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3a"},"Dev_ID":7,"Message":"Merge branch 'master' of https://github.com/moharnab123saikia/CSC510-group-f","Repo_ID":1,"Timestamp":"2016-03-31T05:39:30Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3b"},"Dev_ID":7,"Message":"updated the json with negative reviews","Repo_ID":1,"Timestamp":"2016-03-31T05:38:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3c"},"Dev_ID":5,"Message":"added google map and bug fixed in chrome ext","Repo_ID":1,"Timestamp":"2016-03-31T04:15:43Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3d"},"Dev_ID":5,"Message":"removing sample.json from app home; temp file","Repo_ID":1,"Timestamp":"2016-03-02T04:49:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3e"},"Dev_ID":6,"Message":"fixed background alignment","Repo_ID":1,"Timestamp":"2016-03-02T04:39:19Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f3f"},"Dev_ID":6,"Message":"added total review count to display","Repo_ID":1,"Timestamp":"2016-03-02T04:29:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f40"},"Dev_ID":4,"Message":"Minor update in milestone","Repo_ID":1,"Timestamp":"2016-03-02T04:26:48Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f41"},"Dev_ID":6,"Message":"redesigned the search and display page; added reviews","Repo_ID":1,"Timestamp":"2016-03-02T04:12:03Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f42"},"Dev_ID":7,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-03-02T02:28:47Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f43"},"Dev_ID":7,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-03-02T02:27:16Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f44"},"Dev_ID":7,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-03-02T02:24:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f45"},"Dev_ID":7,"Message":"Updated the evaluation plan in the read me file","Repo_ID":1,"Timestamp":"2016-03-02T02:17:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f46"},"Dev_ID":7,"Message":"Added the evaluation plan in the read me file","Repo_ID":1,"Timestamp":"2016-03-02T02:05:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f47"},"Dev_ID":5,"Message":"added hyperlink to ratings","Repo_ID":1,"Timestamp":"2016-03-02T00:59:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f48"},"Dev_ID":4,"Message":"Updated Readme","Repo_ID":1,"Timestamp":"2016-03-02T00:43:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f49"},"Dev_ID":6,"Message":"added no. of reviews and changed styling","Repo_ID":1,"Timestamp":"2016-03-02T00:36:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4a"},"Dev_ID":4,"Message":"Updated readme file with code base directory","Repo_ID":1,"Timestamp":"2016-03-02T00:33:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4b"},"Dev_ID":6,"Message":"sample telemetry data log for plugin","Repo_ID":1,"Timestamp":"2016-03-02T00:16:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4c"},"Dev_ID":7,"Message":"added telemetry sample files pdf","Repo_ID":1,"Timestamp":"2016-03-02T00:15:12Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4d"},"Dev_ID":5,"Message":"sample log data for user overview","Repo_ID":1,"Timestamp":"2016-03-02T00:12:03Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4e"},"Dev_ID":4,"Message":"Adding sample log data from user trial","Repo_ID":1,"Timestamp":"2016-03-02T00:09:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f4f"},"Dev_ID":5,"Message":"added pagination to the list view of restaurants","Repo_ID":1,"Timestamp":"2016-03-01T23:56:17Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f50"},"Dev_ID":4,"Message":"Updated readme file with logging information\n\nUsing google analytics information for log. As of now we don't have much statistics as deployment has been just done but going forward we will have large logs","Repo_ID":1,"Timestamp":"2016-03-01T23:33:21Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f51"},"Dev_ID":7,"Message":"deleting temporary files","Repo_ID":1,"Timestamp":"2016-03-01T23:32:09Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f52"},"Dev_ID":4,"Message":"Delete the temporary readme","Repo_ID":1,"Timestamp":"2016-03-01T23:17:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f53"},"Dev_ID":4,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-03-01T22:45:16Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f54"},"Dev_ID":7,"Message":"removed compilation python files","Repo_ID":1,"Timestamp":"2016-03-01T20:59:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f55"},"Dev_ID":7,"Message":"updated json file","Repo_ID":1,"Timestamp":"2016-03-01T14:27:04Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f56"},"Dev_ID":7,"Message":"added additional restaurants in csv file","Repo_ID":1,"Timestamp":"2016-03-01T14:20:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f57"},"Dev_ID":7,"Message":"code cleanup and minor variable changes for the keys","Repo_ID":1,"Timestamp":"2016-03-01T14:01:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f58"},"Dev_ID":7,"Message":"updated demo time","Repo_ID":1,"Timestamp":"2016-03-01T13:50:15Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f59"},"Dev_ID":7,"Message":"updates to the individual poc","Repo_ID":1,"Timestamp":"2016-03-01T01:22:59Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5a"},"Dev_ID":6,"Message":"corrected aggregate calculation fixes #55","Repo_ID":1,"Timestamp":"2016-02-29T23:57:39Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5b"},"Dev_ID":6,"Message":"get JSON data and display ratings including aggregate","Repo_ID":1,"Timestamp":"2016-02-29T21:39:22Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5c"},"Dev_ID":5,"Message":"extract individual reviews from db","Repo_ID":1,"Timestamp":"2016-02-29T10:04:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5d"},"Dev_ID":4,"Message":"modification in strings xml file","Repo_ID":1,"Timestamp":"2016-02-29T09:22:43Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5e"},"Dev_ID":4,"Message":"layout modification","Repo_ID":1,"Timestamp":"2016-02-29T09:21:29Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f5f"},"Dev_ID":4,"Message":"non clickable rating bar with reduced step size","Repo_ID":1,"Timestamp":"2016-02-29T08:31:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f60"},"Dev_ID":4,"Message":"edit text for main activity","Repo_ID":1,"Timestamp":"2016-02-29T08:26:45Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f61"},"Dev_ID":5,"Message":"resize the thumbnail fixes #54","Repo_ID":1,"Timestamp":"2016-02-29T08:05:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f62"},"Dev_ID":6,"Message":"added code to parse ratings and display in a pop-up","Repo_ID":1,"Timestamp":"2016-02-29T07:50:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f63"},"Dev_ID":4,"Message":"updated manifest file","Repo_ID":1,"Timestamp":"2016-02-29T07:38:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f64"},"Dev_ID":4,"Message":"MainActivity data store and string add","Repo_ID":1,"Timestamp":"2016-02-29T07:34:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f65"},"Dev_ID":4,"Message":"Menu list addition","Repo_ID":1,"Timestamp":"2016-02-29T06:32:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f66"},"Dev_ID":4,"Message":"layout design for each of the item or restaurant view","Repo_ID":1,"Timestamp":"2016-02-29T06:28:53Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f67"},"Dev_ID":4,"Message":"Launch new activity on click of restaurant in list","Repo_ID":1,"Timestamp":"2016-02-29T06:05:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f68"},"Dev_ID":4,"Message":"data holder class for storing the the parsed data in hashmap","Repo_ID":1,"Timestamp":"2016-02-29T06:01:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f69"},"Dev_ID":4,"Message":"getter and setter methods to fetch data in another activity","Repo_ID":1,"Timestamp":"2016-02-29T05:58:16Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6a"},"Dev_ID":5,"Message":"added hyperlink to thumbnail","Repo_ID":1,"Timestamp":"2016-02-29T02:27:28Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6b"},"Dev_ID":5,"Message":"fixed the weighted average calculation fixes #52","Repo_ID":1,"Timestamp":"2016-02-29T01:44:07Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6c"},"Dev_ID":5,"Message":"added ratings count to schema and script closes #53","Repo_ID":1,"Timestamp":"2016-02-29T01:27:48Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6d"},"Dev_ID":6,"Message":"fixed fractional stars display on review page","Repo_ID":1,"Timestamp":"2016-02-29T01:11:57Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6e"},"Dev_ID":6,"Message":"fix stars display issue","Repo_ID":1,"Timestamp":"2016-02-29T01:00:37Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f6f"},"Dev_ID":7,"Message":"added photo url links to the restaurants json closes #49","Repo_ID":1,"Timestamp":"2016-02-28T14:05:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f70"},"Dev_ID":6,"Message":"added aggregate metric","Repo_ID":1,"Timestamp":"2016-02-28T10:15:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f71"},"Dev_ID":6,"Message":"added visual star to ratings","Repo_ID":1,"Timestamp":"2016-02-28T10:13:14Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f72"},"Dev_ID":6,"Message":"page for displaying individual reviews closes #3","Repo_ID":1,"Timestamp":"2016-02-28T09:31:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f73"},"Dev_ID":6,"Message":"changed homepage design to new specs","Repo_ID":1,"Timestamp":"2016-02-28T09:14:48Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f74"},"Dev_ID":5,"Message":"Sample output file for reviews","Repo_ID":1,"Timestamp":"2016-02-28T08:19:47Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f75"},"Dev_ID":5,"Message":"update migrate script to support thumbnail url","Repo_ID":1,"Timestamp":"2016-02-28T08:02:25Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f76"},"Dev_ID":5,"Message":"Added image to restaurant index views closes #46","Repo_ID":1,"Timestamp":"2016-02-28T08:00:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f77"},"Dev_ID":5,"Message":"script to migrate json data to rails db closes #45","Repo_ID":1,"Timestamp":"2016-02-28T07:06:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f78"},"Dev_ID":6,"Message":"display/ search list of restaurants","Repo_ID":1,"Timestamp":"2016-02-28T07:00:24Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f79"},"Dev_ID":4,"Message":"Fetching real time data from amazon s3","Repo_ID":1,"Timestamp":"2016-02-28T05:33:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7a"},"Dev_ID":7,"Message":"Added code to push the json file to Amazon s3 closes #43","Repo_ID":1,"Timestamp":"2016-02-28T03:56:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7b"},"Dev_ID":6,"Message":"added migrations for yelp/TA/FS closes #9","Repo_ID":1,"Timestamp":"2016-02-28T00:59:02Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7c"},"Dev_ID":5,"Message":"added resto_scrapper controller","Repo_ID":1,"Timestamp":"2016-02-27T21:10:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7d"},"Dev_ID":4,"Message":"search box implementation","Repo_ID":1,"Timestamp":"2016-02-27T19:34:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7e"},"Dev_ID":4,"Message":"Layout modification","Repo_ID":1,"Timestamp":"2016-02-27T19:18:27Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f7f"},"Dev_ID":7,"Message":"updated json file","Repo_ID":1,"Timestamp":"2016-02-25T16:18:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f80"},"Dev_ID":7,"Message":"added code to remove unnecessary unicode characters from the reviews closes #40","Repo_ID":1,"Timestamp":"2016-02-25T16:09:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f81"},"Dev_ID":7,"Message":"added individual module code and output json","Repo_ID":1,"Timestamp":"2016-02-22T18:27:52Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f82"},"Dev_ID":7,"Message":"adding code to crawl the reviews closes #19","Repo_ID":1,"Timestamp":"2016-02-22T15:46:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f83"},"Dev_ID":4,"Message":"delted duplicate folder","Repo_ID":1,"Timestamp":"2016-02-22T09:15:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f84"},"Dev_ID":4,"Message":"initial commit","Repo_ID":1,"Timestamp":"2016-02-22T09:05:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f85"},"Dev_ID":4,"Message":"initial commit android solution closes","Repo_ID":1,"Timestamp":"2016-02-22T09:00:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f86"},"Dev_ID":5,"Message":"added schema file for webscrapper app","Repo_ID":1,"Timestamp":"2016-02-22T07:46:37Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f87"},"Dev_ID":5,"Message":"Create a webscrapper app for frontend closes #35","Repo_ID":1,"Timestamp":"2016-02-22T07:10:53Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f88"},"Dev_ID":7,"Message":"added url to sample json output","Repo_ID":1,"Timestamp":"2016-02-21T23:12:04Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f89"},"Dev_ID":5,"Message":"updated the name of the sample output file","Repo_ID":1,"Timestamp":"2016-02-21T22:34:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8a"},"Dev_ID":6,"Message":"added basic popup structure closes #19 and #26","Repo_ID":1,"Timestamp":"2016-02-21T22:27:13Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8b"},"Dev_ID":5,"Message":"renamed sample json file","Repo_ID":1,"Timestamp":"2016-02-21T22:32:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8c"},"Dev_ID":5,"Message":"formatted the sample json file ouput","Repo_ID":1,"Timestamp":"2016-02-21T22:28:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8d"},"Dev_ID":7,"Message":"Update sample_json.txt","Repo_ID":1,"Timestamp":"2016-02-21T22:19:31Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8e"},"Dev_ID":7,"Message":"Update sample_json.txt","Repo_ID":1,"Timestamp":"2016-02-21T22:16:34Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f8f"},"Dev_ID":6,"Message":"added logo fixes #18","Repo_ID":1,"Timestamp":"2016-02-21T22:04:17Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f90"},"Dev_ID":5,"Message":"stub dir for webscrapper frontend","Repo_ID":1,"Timestamp":"2016-02-21T22:02:39Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f91"},"Dev_ID":7,"Message":"crawler script for fetching ratings closes #6","Repo_ID":1,"Timestamp":"2016-02-21T21:56:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f92"},"Dev_ID":5,"Message":"added foursquare links","Repo_ID":1,"Timestamp":"2016-02-21T21:42:24Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f93"},"Dev_ID":6,"Message":"added manifest","Repo_ID":1,"Timestamp":"2016-02-19T18:41:42Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f94"},"Dev_ID":7,"Message":"Rename sample_json.txt to samples/sample_json.txt","Repo_ID":1,"Timestamp":"2016-02-19T01:46:18Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f95"},"Dev_ID":7,"Message":"Sample JSON\n\nSample text file containing the JSON format for storing the reviews","Repo_ID":1,"Timestamp":"2016-02-18T21:07:21Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f96"},"Dev_ID":6,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-02-18T20:53:12Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f97"},"Dev_ID":6,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-02-18T20:52:06Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f98"},"Dev_ID":5,"Message":"sample csv file for review URL from different websites closes #12","Repo_ID":1,"Timestamp":"2016-02-18T20:46:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f99"},"Dev_ID":7,"Message":"Update README.md\n\nContents for Mar 1 deliverable","Repo_ID":1,"Timestamp":"2016-02-04T15:56:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9a"},"Dev_ID":4,"Message":"Merge branch 'master' of https://github.com/moharnab123saikia/CSC510-group-f","Repo_ID":1,"Timestamp":"2016-02-01T22:28:54Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9b"},"Dev_ID":4,"Message":"Updated feb1 report","Repo_ID":1,"Timestamp":"2016-02-01T22:27:28Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9c"},"Dev_ID":6,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-02-01T22:17:51Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9d"},"Dev_ID":4,"Message":"Update README.md","Repo_ID":1,"Timestamp":"2016-02-01T22:16:38Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9e"},"Dev_ID":4,"Message":"Updated Readme.md\n\nAdded the project description","Repo_ID":1,"Timestamp":"2016-02-01T22:16:23Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0f9f"},"Dev_ID":4,"Message":"Report for Feb1 Deliverable","Repo_ID":1,"Timestamp":"2016-02-01T09:48:44Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa0"},"Dev_ID":5,"Message":"Initial commit : created README.md","Repo_ID":1,"Timestamp":"2016-01-08T22:49:46Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa1"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T17:51:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa2"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T17:51:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa3"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T17:46:30Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa4"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T17:46:00Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa5"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T17:29:12Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa6"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T17:24:49Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa7"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T17:24:17Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa8"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T16:14:13Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fa9"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T16:13:37Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0faa"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T16:13:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fab"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T03:09:19Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fac"},"Dev_ID":11,"Message":"Added files via upload\n\ngrA --- pie chart generation file.\r\nFor generating barplot, I have copied all relevant data from all groups in a single file. For example, grComment.csv contains total comments of all 6 groups.","Repo_ID":2,"Timestamp":"2016-04-29T01:46:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fad"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T01:41:35Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fae"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T01:33:05Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0faf"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-29T01:32:41Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb0"},"Dev_ID":9,"Message":"Fix for milestone scraping","Repo_ID":2,"Timestamp":"2016-04-29T01:30:20Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb1"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-29T00:46:33Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb2"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-28T21:07:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb3"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-28T21:06:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb4"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-28T21:03:58Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb5"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-28T21:03:36Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb6"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-28T21:03:10Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb7"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-28T21:02:50Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb8"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-28T21:02:04Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fb9"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-28T21:01:17Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fba"},"Dev_ID":9,"Message":"fix previous commit","Repo_ID":2,"Timestamp":"2016-04-27T20:39:11Z"}
+{"_id":{"$oid":"572515a912ccff03ad5d0fbb"},"Dev_ID":9,"Message":"Merge branch 'master' of https://github.com/cleebp/csc-510-group-g","Repo_ID":2,"Timestamp":"2016-04-27T20:37:10Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fbc"},"Dev_ID":9,"Message":"adding number of changes per commit","Repo_ID":2,"Timestamp":"2016-04-27T20:36:37Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fbd"},"Dev_ID":9,"Message":"adding number of changes per commit","Repo_ID":2,"Timestamp":"2016-04-27T20:35:47Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fbe"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-25T15:52:47Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fbf"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-25T15:52:04Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc0"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-25T15:39:21Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc1"},"Dev_ID":9,"Message":"Merge branch 'master' of https://github.com/cleebp/csc-510-group-g","Repo_ID":2,"Timestamp":"2016-04-25T15:38:29Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc2"},"Dev_ID":9,"Message":"Update csvs","Repo_ID":2,"Timestamp":"2016-04-25T15:38:19Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc3"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-25T15:38:07Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc4"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-04-25T15:36:47Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc5"},"Dev_ID":11,"Message":"Create a.gitkeep","Repo_ID":2,"Timestamp":"2016-04-25T15:35:30Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc6"},"Dev_ID":9,"Message":"Update dbs to include additions, deletions","Repo_ID":2,"Timestamp":"2016-04-25T04:10:45Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc7"},"Dev_ID":9,"Message":"Update group g dmp","Repo_ID":2,"Timestamp":"2016-04-20T18:46:55Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc8"},"Dev_ID":9,"Message":"Update data","Repo_ID":2,"Timestamp":"2016-04-20T18:45:06Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fc9"},"Dev_ID":9,"Message":"Add data, csv, scripts, etc.","Repo_ID":2,"Timestamp":"2016-04-17T19:40:59Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fca"},"Dev_ID":10,"Message":"names r hard","Repo_ID":2,"Timestamp":"2016-04-13T19:04:45Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fcb"},"Dev_ID":10,"Message":"initial may commit\n\narchitecture! organization! yay!","Repo_ID":2,"Timestamp":"2016-04-13T19:02:35Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fcc"},"Dev_ID":10,"Message":"updated presentation\n\nmost recent version as of 4:42 on 4/6","Repo_ID":2,"Timestamp":"2016-04-06T20:42:38Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fcd"},"Dev_ID":10,"Message":"uploaded 'final' report files from sharelatex\n\nhah “final”","Repo_ID":2,"Timestamp":"2016-04-06T20:22:43Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fce"},"Dev_ID":10,"Message":"edited tasks.md\n\nThere was some placeholder text still hanging around so I cut it loose…","Repo_ID":2,"Timestamp":"2016-04-05T15:54:00Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fcf"},"Dev_ID":10,"Message":"fixing some links\n\nherp derp trees blobs","Repo_ID":2,"Timestamp":"2016-04-04T16:46:59Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd0"},"Dev_ID":10,"Message":"apr7 repo organization and readme creation\n\nadded a ton of necessary readmes\n\ntl;dr: stuff is (mostly) documented now","Repo_ID":2,"Timestamp":"2016-04-04T16:40:58Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd1"},"Dev_ID":11,"Message":"Update my-panel1-view.coffee","Repo_ID":2,"Timestamp":"2016-03-28T17:30:06Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd2"},"Dev_ID":9,"Message":"Added some telemetry data to apr1/Data","Repo_ID":2,"Timestamp":"2016-03-28T16:48:01Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd3"},"Dev_ID":9,"Message":"Delete unnecessary file","Repo_ID":2,"Timestamp":"2016-03-27T15:26:50Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd4"},"Dev_ID":10,"Message":"added tasks 9 and 10\n\ntasks complete","Repo_ID":2,"Timestamp":"2016-03-24T18:59:51Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd5"},"Dev_ID":10,"Message":"added tasks 7 and 8","Repo_ID":2,"Timestamp":"2016-03-24T18:41:30Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd6"},"Dev_ID":9,"Message":"Update README.md\n\nAdd information about installing dependencies for telem-windows.py","Repo_ID":2,"Timestamp":"2016-03-24T02:58:31Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd7"},"Dev_ID":9,"Message":"Delete clipit.txt\n\nRemove unnecessary log file.","Repo_ID":2,"Timestamp":"2016-03-24T02:55:41Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd8"},"Dev_ID":9,"Message":"Merge pull request #68 from cleebp/telemetry\n\nTelemetry","Repo_ID":2,"Timestamp":"2016-03-24T02:53:06Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fd9"},"Dev_ID":9,"Message":"Merge branch 'telemetry' of https://github.com/cleebp/csc-510-group-g into telemetry","Repo_ID":2,"Timestamp":"2016-03-24T02:50:33Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fda"},"Dev_ID":9,"Message":"Fixed windows clipboard","Repo_ID":2,"Timestamp":"2016-03-24T02:49:46Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fdb"},"Dev_ID":10,"Message":"added task 5 and 6","Repo_ID":2,"Timestamp":"2016-03-23T19:12:36Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fdc"},"Dev_ID":8,"Message":"fix the bug of history","Repo_ID":2,"Timestamp":"2016-03-23T19:05:13Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fdd"},"Dev_ID":10,"Message":"task 4 added\n\nnow just have to make tasks for lib","Repo_ID":2,"Timestamp":"2016-03-23T18:50:11Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fde"},"Dev_ID":10,"Message":"task 2 and 3 added","Repo_ID":2,"Timestamp":"2016-03-23T15:19:15Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fdf"},"Dev_ID":10,"Message":"first task completed\n\ntest commit to see how this looks on master","Repo_ID":2,"Timestamp":"2016-03-23T14:52:38Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe0"},"Dev_ID":10,"Message":"apr1 initial commit\n\nestablishing april directories and setting up initial experiment\ndirectory","Repo_ID":2,"Timestamp":"2016-03-23T00:59:41Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe1"},"Dev_ID":9,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-14T02:00:19Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe2"},"Dev_ID":9,"Message":"Windows telemetry added","Repo_ID":2,"Timestamp":"2016-03-14T01:53:34Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe3"},"Dev_ID":9,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-14T01:33:39Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe4"},"Dev_ID":9,"Message":"Update telemetry to work with custom file names.","Repo_ID":2,"Timestamp":"2016-03-14T01:32:09Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe5"},"Dev_ID":9,"Message":"fix merge conflicts","Repo_ID":2,"Timestamp":"2016-03-03T17:46:15Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe6"},"Dev_ID":9,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-03T17:44:52Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe7"},"Dev_ID":9,"Message":"Update readme for telemetry","Repo_ID":2,"Timestamp":"2016-03-03T17:42:38Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe8"},"Dev_ID":10,"Message":"readme etc\n\ngithub has issues with existance","Repo_ID":2,"Timestamp":"2016-03-02T20:44:35Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fe9"},"Dev_ID":9,"Message":"Fix indentation","Repo_ID":2,"Timestamp":"2016-03-02T19:45:10Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fea"},"Dev_ID":8,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-02T19:32:05Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0feb"},"Dev_ID":10,"Message":"updated readme's and got rid of teller package\n\nhousekeeping","Repo_ID":2,"Timestamp":"2016-03-02T19:22:10Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fec"},"Dev_ID":9,"Message":"Merge pull request #50 from cleebp/telemetry\n\nAdding telemtry","Repo_ID":2,"Timestamp":"2016-03-02T19:16:30Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fed"},"Dev_ID":10,"Message":"renamed a thingy\n\nthingies are descriptive","Repo_ID":2,"Timestamp":"2016-03-02T19:12:56Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fee"},"Dev_ID":10,"Message":"commented out data persistence bug\n\nwooooooo","Repo_ID":2,"Timestamp":"2016-03-02T19:10:33Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fef"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-02T19:06:39Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff0"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-03-02T19:04:56Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff1"},"Dev_ID":10,"Message":"formatted readme's\n\nwent through and formatted the readme’s of the packages so they were\nall using the same basic style.","Repo_ID":2,"Timestamp":"2016-03-02T19:00:16Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff2"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-02T15:07:57Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff3"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-02T15:07:29Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff4"},"Dev_ID":9,"Message":"Fix telemetry bug where clicks weren't getting logged with clipit-panel","Repo_ID":2,"Timestamp":"2016-03-02T03:50:59Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff5"},"Dev_ID":9,"Message":"Merge branch 'master' of https://github.com/cleebp/csc-510-group-g into telemetry","Repo_ID":2,"Timestamp":"2016-03-01T21:17:00Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff6"},"Dev_ID":10,"Message":"fixed display bug after selecting a panel item\n\ntiny hack to force a redisplay whenever an item is selected","Repo_ID":2,"Timestamp":"2016-03-01T17:51:10Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff7"},"Dev_ID":10,"Message":"panel updates display after copy, paste cmd also pastes most recent item\n\nnext step is to fix the behavior after clicking on an item having to\npaste again in order to bring back the panel.","Repo_ID":2,"Timestamp":"2016-03-01T17:33:19Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff8"},"Dev_ID":10,"Message":"added mac integration\n\ntechnically linux too","Repo_ID":2,"Timestamp":"2016-03-01T16:56:15Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ff9"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T04:59:11Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ffa"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T04:29:55Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ffb"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T04:29:26Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ffc"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T03:55:00Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ffd"},"Dev_ID":11,"Message":"Added files via upload","Repo_ID":2,"Timestamp":"2016-03-01T03:53:09Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0ffe"},"Dev_ID":11,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T03:51:31Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d0fff"},"Dev_ID":9,"Message":"Telemetry added to clipit-cmd","Repo_ID":2,"Timestamp":"2016-03-01T03:43:37Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1000"},"Dev_ID":9,"Message":"Integrate telemetry with clipit-order","Repo_ID":2,"Timestamp":"2016-03-01T03:37:15Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1001"},"Dev_ID":8,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T02:25:49Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1002"},"Dev_ID":8,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-03-01T02:17:16Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1003"},"Dev_ID":10,"Message":"updated mar1 deliverable readme\n\nadded an evaluation plan and edited the structure section","Repo_ID":2,"Timestamp":"2016-02-28T20:46:51Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1004"},"Dev_ID":8,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-02-28T20:35:48Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1005"},"Dev_ID":9,"Message":"Added log file URL","Repo_ID":2,"Timestamp":"2016-02-28T20:24:22Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1006"},"Dev_ID":9,"Message":"Merge pull request #42 from cleebp/telemetry\n\nAdded log sample","Repo_ID":2,"Timestamp":"2016-02-28T20:23:10Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1007"},"Dev_ID":9,"Message":"Added log sample","Repo_ID":2,"Timestamp":"2016-02-28T20:22:34Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1008"},"Dev_ID":10,"Message":"Merge pull request #41 from cleebp/effat\n\nEffat's merge","Repo_ID":2,"Timestamp":"2016-02-28T20:19:37Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1009"},"Dev_ID":10,"Message":"Merge branch 'master' into effat\n\nplease work","Repo_ID":2,"Timestamp":"2016-02-28T20:17:07Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100a"},"Dev_ID":10,"Message":"minor main readmes","Repo_ID":2,"Timestamp":"2016-02-28T20:12:49Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100b"},"Dev_ID":9,"Message":"Update README.md","Repo_ID":2,"Timestamp":"2016-02-28T20:08:29Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100c"},"Dev_ID":10,"Message":"more directory fixes\n\ndear god please work","Repo_ID":2,"Timestamp":"2016-02-28T20:02:30Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100d"},"Dev_ID":9,"Message":"Remove duplicate files","Repo_ID":2,"Timestamp":"2016-02-28T19:50:18Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100e"},"Dev_ID":9,"Message":"Fix directory structure","Repo_ID":2,"Timestamp":"2016-02-28T19:49:23Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d100f"},"Dev_ID":11,"Message":"Delete Activator.java","Repo_ID":2,"Timestamp":"2016-02-28T19:47:48Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1010"},"Dev_ID":11,"Message":"Delete README.md","Repo_ID":2,"Timestamp":"2016-02-28T19:47:32Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1011"},"Dev_ID":11,"Message":"Delete my-new-panel.rar","Repo_ID":2,"Timestamp":"2016-02-28T19:46:54Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1012"},"Dev_ID":11,"Message":"Delete my-package.rar","Repo_ID":2,"Timestamp":"2016-02-28T19:46:40Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1013"},"Dev_ID":11,"Message":"Delete org.plugin.helloworld.rar","Repo_ID":2,"Timestamp":"2016-02-28T19:46:22Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1014"},"Dev_ID":11,"Message":"Delete org.plugin.helloworld_master.rar","Repo_ID":2,"Timestamp":"2016-02-28T19:45:42Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1015"},"Dev_ID":9,"Message":"Merge branch 'reachspirit'","Repo_ID":2,"Timestamp":"2016-02-28T19:37:50Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1016"},"Dev_ID":9,"Message":"Fix merge conflicts","Repo_ID":2,"Timestamp":"2016-02-28T19:37:20Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1017"},"Dev_ID":11,"Message":"Panel feature","Repo_ID":2,"Timestamp":"2016-02-28T19:33:48Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1018"},"Dev_ID":10,"Message":"fixed some spelling\n\ngrammar is hard","Repo_ID":2,"Timestamp":"2016-02-25T16:42:48Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1019"},"Dev_ID":10,"Message":"updated readme's\n\nadded a readme for mar1 deliverable","Repo_ID":2,"Timestamp":"2016-02-25T16:40:05Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101a"},"Dev_ID":9,"Message":"Remove DS_Store","Repo_ID":2,"Timestamp":"2016-02-24T20:26:20Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101b"},"Dev_ID":9,"Message":"Fix gitignore","Repo_ID":2,"Timestamp":"2016-02-24T20:25:19Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101c"},"Dev_ID":9,"Message":"Hopefully fixes unnecessary folders being present","Repo_ID":2,"Timestamp":"2016-02-24T20:22:13Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101d"},"Dev_ID":9,"Message":"Remove unused folder","Repo_ID":2,"Timestamp":"2016-02-24T20:21:18Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101e"},"Dev_ID":9,"Message":"Merge pull request #34 from cleebp/telemetry\n\nAdding telemetry.","Repo_ID":2,"Timestamp":"2016-02-24T20:18:23Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d101f"},"Dev_ID":10,"Message":"fixed path\n\nof course this would happen","Repo_ID":2,"Timestamp":"2016-02-24T20:13:01Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1020"},"Dev_ID":10,"Message":"Merge pull request #31 from cleebp/cleebp\n\nCleebp","Repo_ID":2,"Timestamp":"2016-02-24T20:08:35Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1021"},"Dev_ID":10,"Message":"updated readme and package files\n\nhousekeeping before the merge","Repo_ID":2,"Timestamp":"2016-02-24T20:02:24Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1022"},"Dev_ID":10,"Message":"reorg\n\nmoving files around and getting rid of the temporary directories of the\nbase projects","Repo_ID":2,"Timestamp":"2016-02-24T19:42:24Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1023"},"Dev_ID":9,"Message":"Finished paste logging. Output formats should be the same now. Need to discuss where we're going to be saving the logs.","Repo_ID":2,"Timestamp":"2016-02-24T04:51:59Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1024"},"Dev_ID":10,"Message":"worked on the demo gif","Repo_ID":2,"Timestamp":"2016-02-23T19:20:44Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1025"},"Dev_ID":9,"Message":"Added basic paste detection. Todo: Proper format, store date","Repo_ID":2,"Timestamp":"2016-02-23T04:29:40Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1026"},"Dev_ID":9,"Message":"Added basic paste detection. Todo: Proper format, store date","Repo_ID":2,"Timestamp":"2016-02-23T04:24:04Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1027"},"Dev_ID":10,"Message":"fixed link\n\nhopefully","Repo_ID":2,"Timestamp":"2016-02-22T18:46:45Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1028"},"Dev_ID":10,"Message":"demo .gif added\n\nthis will hopefully work as intended, will probably update the .gif\nlater with more context but this is mainly meant to see if it will work\nat all.","Repo_ID":2,"Timestamp":"2016-02-22T18:45:54Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1029"},"Dev_ID":10,"Message":"copy now resets index, added readme\n\n^","Repo_ID":2,"Timestamp":"2016-02-22T18:28:17Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102a"},"Dev_ID":10,"Message":"all commands are working!\n\nhad to rebind indexNext from ‘shift-cmd-l’ to ‘shift-cmd-k’ because of\na keybinding conflict","Repo_ID":2,"Timestamp":"2016-02-22T17:45:02Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102b"},"Dev_ID":10,"Message":"debugging, 75% working\n\nadded console logs, everything is working except  indexNext because\nthat apparently is using the same command (cmd-shift-l) as another\nalready existing command","Repo_ID":2,"Timestamp":"2016-02-22T17:16:57Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102c"},"Dev_ID":10,"Message":"first stable build\n\nstill debugging and clearing up functionality, but at least everything\nruns now and sort of “works”","Repo_ID":2,"Timestamp":"2016-02-22T15:51:23Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102d"},"Dev_ID":9,"Message":"Remove log file, mac hidden files","Repo_ID":2,"Timestamp":"2016-02-22T04:46:04Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102e"},"Dev_ID":9,"Message":"Minor fix to applescript","Repo_ID":2,"Timestamp":"2016-02-22T04:45:33Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d102f"},"Dev_ID":9,"Message":"Remove clipboard-history","Repo_ID":2,"Timestamp":"2016-02-22T04:21:24Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1030"},"Dev_ID":9,"Message":"Logging when something is copied onto the system clipboard","Repo_ID":2,"Timestamp":"2016-02-22T04:18:32Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1031"},"Dev_ID":10,"Message":"updated menus and styles\n\ntheoretically menus and styles are now done, spec remains but thats for\ntesting later, right now will need to focus on debugging because it\ndoesn’t work at all (luckily atom is built on chromium so we have some\ndebug tools)","Repo_ID":2,"Timestamp":"2016-02-16T19:57:35Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1032"},"Dev_ID":10,"Message":"reorg, and initial work on the keymaps, lib, and package\n\ntheoretically the keymaps .cson, package.json, and the two lib .coffee\nfiles are all altered and could be final, still need to work on menus,\nspec, and styles","Repo_ID":2,"Timestamp":"2016-02-16T19:22:41Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1033"},"Dev_ID":8,"Message":"write a short description of this branch","Repo_ID":2,"Timestamp":"2016-02-16T04:48:33Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1034"},"Dev_ID":9,"Message":"Update readme","Repo_ID":2,"Timestamp":"2016-02-16T03:54:18Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1035"},"Dev_ID":11,"Message":"Panel Added","Repo_ID":2,"Timestamp":"2016-02-15T19:56:35Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1036"},"Dev_ID":11,"Message":"First Atom Package","Repo_ID":2,"Timestamp":"2016-02-15T19:50:54Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1037"},"Dev_ID":9,"Message":"Added base to telemetry","Repo_ID":2,"Timestamp":"2016-02-14T00:00:22Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1038"},"Dev_ID":10,"Message":"added textmate project as a subdir to guide edits\n\nthis is really just so i can quickly compare in atom rather than\nlooking at the github in a separate window, will remove this when done","Repo_ID":2,"Timestamp":"2016-02-12T19:34:19Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1039"},"Dev_ID":10,"Message":"removed eclipse project\n\njust merged most recent master to cleebp, now cleaning up dir prior to\ndev, hope this is all in my branch and I’m not screwing with master…","Repo_ID":2,"Timestamp":"2016-02-12T19:14:29Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103a"},"Dev_ID":10,"Message":"Merge branch 'master' into cleebp","Repo_ID":2,"Timestamp":"2016-02-12T19:12:14Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103b"},"Dev_ID":10,"Message":"updated main readme","Repo_ID":2,"Timestamp":"2016-02-10T20:44:18Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103c"},"Dev_ID":10,"Message":"added feature subdirectories","Repo_ID":2,"Timestamp":"2016-02-10T20:29:01Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103d"},"Dev_ID":10,"Message":"initial mar1 setup\n\nadded mar1 folder along with subdirectories for each project “solution”\nor “feature”, open source starter project is located in base and was\nforked with no edits yet","Repo_ID":2,"Timestamp":"2016-02-10T20:26:21Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103e"},"Dev_ID":10,"Message":"removed unnecessary latex files","Repo_ID":2,"Timestamp":"2016-02-02T02:34:43Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d103f"},"Dev_ID":9,"Message":"Removing mac hidden files","Repo_ID":2,"Timestamp":"2016-02-02T02:32:38Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1040"},"Dev_ID":9,"Message":"Removing mac files","Repo_ID":2,"Timestamp":"2016-02-02T02:30:43Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1041"},"Dev_ID":9,"Message":"Merge branch 'master' of https://github.com/cleebp/csc-510-group-g","Repo_ID":2,"Timestamp":"2016-02-02T02:29:45Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1042"},"Dev_ID":9,"Message":"Fixing update I broke","Repo_ID":2,"Timestamp":"2016-02-02T02:27:51Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1043"},"Dev_ID":10,"Message":"fixed main readme\n\nsilly new lines…","Repo_ID":2,"Timestamp":"2016-02-02T02:03:25Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1044"},"Dev_ID":10,"Message":"updated readmes\n\nI wonder what the plural of readme is…","Repo_ID":2,"Timestamp":"2016-02-02T02:00:18Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1045"},"Dev_ID":10,"Message":"initial feb1 commit","Repo_ID":2,"Timestamp":"2016-02-02T01:44:47Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1046"},"Dev_ID":9,"Message":"Fixed folders","Repo_ID":2,"Timestamp":"2016-02-01T03:39:47Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1047"},"Dev_ID":9,"Message":"Added a folder to store the feb1 report","Repo_ID":2,"Timestamp":"2016-01-30T04:58:38Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1048"},"Dev_ID":11,"Message":"Deleted org.plugin.helloworld.rar","Repo_ID":2,"Timestamp":"2016-01-30T04:31:22Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1049"},"Dev_ID":11,"Message":"Merge branch 'effat' of https://github.com/cleebp/csc-510-group-g into\nblah blah","Repo_ID":2,"Timestamp":"2016-01-30T04:11:50Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104a"},"Dev_ID":11,"Message":"checking out from master","Repo_ID":2,"Timestamp":"2016-01-30T04:08:46Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104b"},"Dev_ID":11,"Message":"Hello world plugin","Repo_ID":2,"Timestamp":"2016-01-28T00:10:37Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104c"},"Dev_ID":11,"Message":"add all","Repo_ID":2,"Timestamp":"2016-01-27T23:14:23Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104d"},"Dev_ID":11,"Message":"add all","Repo_ID":2,"Timestamp":"2016-01-27T23:12:27Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104e"},"Dev_ID":11,"Message":"Add all files","Repo_ID":2,"Timestamp":"2016-01-27T22:43:01Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d104f"},"Dev_ID":10,"Message":"hello world plugin test commit\n\nhope this works","Repo_ID":2,"Timestamp":"2016-01-20T18:46:50Z"}
+{"_id":{"$oid":"572515aa12ccff03ad5d1050"},"Dev_ID":9,"Message":"Added placeholder for readme","Repo_ID":2,"Timestamp":"2016-01-12T18:29:23Z"}
