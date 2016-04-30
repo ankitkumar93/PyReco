@@ -31,16 +31,18 @@ dbname = "project2"
 coll_issues_name = "raw_issues"
 coll_commits_name = "raw_commits"
 coll_milestones_name = "raw_milestones"
+coll_comments_name = "raw_comments"
 db = MongoClient()[dbname]
 coll_issues = db[coll_issues_name]
 coll_commits = db[coll_commits_name]
 coll_milestones = db[coll_milestones_name]
+coll_comments = db[coll_comments_name]
 
 #repos
 repo_names = ['ankitkumar93/csc510-se-project', 'jordy-jose/CSC_510_group_d', 'moharnab123saikia/CSC510-group-f', 'cleebp/csc-510-group-g']
 
 #token
-token = "1a0895991496c60384e1b420d43a397e161951c9"
+token = "<TOKEN HERE>"
 
 def dump_data(url, collection):
   try:
@@ -86,12 +88,23 @@ def fetchMilestones(repo_name):
     if not doNext : break
   print("Milstones Done")
 
+def fetchComments(repo_name):
+    print("Comments Init")
+    page = 1
+    while(True):
+      doNext = dump_data('https://api.github.com/repos/' + repo_name + '/issues/comments?page=' + str(page), coll_comments)
+      print("page "+ str(page))
+      page += 1
+      if not doNext : break
+    print("Comments Done")
+
 def main():
     for repo_name in repo_names:
         print("Repo Being Considered: " + repo_name)
         fetchIssues(repo_name)
         fetchCommits(repo_name)
         fetchMilestones(repo_name)
+        fetchComments(repo_name)
 
 if __name__ == "__main__":
   main()
