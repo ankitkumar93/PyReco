@@ -33,9 +33,11 @@ Issues{
 
 Milestones{
   Milestone_ID:
+  Milestone_Title:
   Created_Timestamp:
   Due_Timestamp:
   Closed_Timestamp:
+  Issues:
 }
 
 Comments{
