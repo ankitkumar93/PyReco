@@ -25,15 +25,10 @@ Commits{
 
 Issues{
   Issue_ID:
-  Issue_Title:
-  Issue_Created_At:
-  Issue_Closed_At:
   Author:
   Assignee:
+  Milestone:
   Labels:
-  Issue_Comments:
-  Issue_State:
-  Milestone_ID:
 }
 
 Milestones{
@@ -44,7 +39,7 @@ Milestones{
 }
 
 Comments{
-  Message:
+  Issue_ID:
   Dev_ID:
 }
 
