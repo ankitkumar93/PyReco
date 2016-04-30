@@ -39,7 +39,7 @@ Milestones{
 }
 
 Comments{
-  Issue_ID:
+  Message:
   Dev_ID:
 }
 
