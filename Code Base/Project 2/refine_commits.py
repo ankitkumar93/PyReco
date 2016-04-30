@@ -44,7 +44,6 @@ def fetch_raw_commits():
 
 #fetch the dev id
 def fetch_dev_id(name):
-    print("dev : " + name)
     data = coll_dev.find({dev_name_tag : name})
     dev_data = data[0]
     return dev_data[dev_id_tag]

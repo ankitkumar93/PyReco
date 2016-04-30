@@ -42,7 +42,7 @@ coll_comments = db[coll_comments_name]
 repo_names = ['ankitkumar93/csc510-se-project', 'moharnab123saikia/CSC510-group-f', 'cleebp/csc-510-group-g']
 
 #token
-token = "<TOKEN HERE>"
+token = "c7285bfa8faf7c9bb01457af6559fbf8c7fc1056"
 
 def dump_data(url, collection):
   try:

@@ -32,7 +32,7 @@ actor_tag = 'actor'
 login_tag = 'login'
 
 #repos urls
-repo_names = ["ankitkumar93/csc510-se-project", "jordy-jose/CSC_510_group_d", "moharnab123saikia/CSC510-group-f", "cleebp/csc-510-group-g"]
+repo_names = ["ankitkumar93/csc510-se-project", "moharnab123saikia/CSC510-group-f", "cleebp/csc-510-group-g"]
 
 #url prefix
 gitapi_url_prefix = "https://api.github.com/repos/"
