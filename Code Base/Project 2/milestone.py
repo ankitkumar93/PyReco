@@ -24,7 +24,7 @@ milestones_cursor = coll_name_milestone_raw.find()
 #fetch list of issues for a repo
 def fetch_issues(milestone_id):
     issues_list = []
-    issues_cursor = coll_name_issues.find({'Milestone': milestone_id})
+    issues_cursor = coll_name_issues.find({'Milestone_ID': milestone_id})
     for issue in issues_cursor:
         Issue_ID = issue['Issue_ID']
         issues_list.append(Issue_ID)
