@@ -20,19 +20,23 @@ coll_name_issues = db[coll_name_issues]
 
 milestones_cursor = coll_name_milestone_raw.find()
 
-#fetch list of devs for a repo
+
+#fetch list of issues for a repo
 def fetch_issues(milestone_id):
     issues_list = []
-    data = coll_issues.find()
-    for row in data:
-        url = row[url_tag]
-        if repo_url in url:
-            login_name = row[actor_tag][login_tag]
-            if login_name not in dev_list:
-                if login_name not in dev_ignore_list:
-                    dev_list.append(login_name)
-    return dev_list
-
+    issues_cursor = coll_name_issues.find({'Milestone': milestone_id})
+    for issue in issues_cursor:
+        Issue_ID = issue['Issue_ID']
+        issues_list.append(Issue_ID)
+    issues_list=issues_list
+    return issues_list
+    # print('milestone')
+    # print(milestone_id)
+    # print('issues')
+    # print(issues_list)
+    # print('count')
+    # print(len(issues_list))
+    # sys.exit(0)
 
 # filter milestone
 def filter_milestones():
@@ -44,21 +48,22 @@ def filter_milestones():
         Closed_Timestamp = milestone['closed_at']
         milestone_id = milestone['id']
         milestone_title = milestone['title']
-        #fetch_issues(milestone_id)
-        insert_milestone(Created_Timestamp,Due_Timestamp,Closed_Timestamp,milestone_id,milestone_title)
+        issues = fetch_issues(milestone_id)
+        insert_milestone(Created_Timestamp,Due_Timestamp,Closed_Timestamp,milestone_id,milestone_title,issues)
         
 
     print("Filterng milestones Done")
 
 # insert milestone
-def insert_milestone(Created_Timestamp, Due_Timestamp, Closed_Timestamp,milestone_id,milestone_title):
+def insert_milestone(Created_Timestamp, Due_Timestamp, Closed_Timestamp,milestone_id,milestone_title,issues):
   #print('inside insert ')
   coll_name_milestones.insert_one({
     "Milestone_ID" : milestone_id,
     "Milestone_Title" : milestone_title,
     "Created_Timestamp" : Created_Timestamp,
     "Due_Timestamp" : Due_Timestamp,
-    "Closed_Timestamp" : Closed_Timestamp
+    "Closed_Timestamp" : Closed_Timestamp,
+    "Issues" : issues
     })
 
 def main():
