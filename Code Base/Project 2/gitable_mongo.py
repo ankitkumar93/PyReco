@@ -39,7 +39,7 @@ coll_milestones = db[coll_milestones_name]
 coll_comments = db[coll_comments_name]
 
 #repos
-repo_names = ['ankitkumar93/csc510-se-project', 'jordy-jose/CSC_510_group_d', 'moharnab123saikia/CSC510-group-f', 'cleebp/csc-510-group-g']
+repo_names = ['ankitkumar93/csc510-se-project', 'moharnab123saikia/CSC510-group-f', 'cleebp/csc-510-group-g']
 
 #token
 token = "<TOKEN HERE>"
